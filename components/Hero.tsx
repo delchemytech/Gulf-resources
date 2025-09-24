@@ -9,6 +9,7 @@ export default function hero() {
           src={"/bg.png"}
           fill
           alt={""}
+          priority
           className="object-cover min-h-[680px]"
         />
 
