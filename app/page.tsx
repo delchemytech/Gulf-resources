@@ -9,7 +9,7 @@ import { FormEvent, useState } from "react";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
       <div className="-mt-27">
         <Hero />
