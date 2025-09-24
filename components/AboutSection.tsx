@@ -11,7 +11,7 @@ const AboutSection = () => {
       
         <div className="relative w-90 h-90 "> 
           <Image
-            src="/workers.png"
+            src="/workers.png" 
             alt="Two workers smiling"
             fill
             className="object-cover"
