@@ -2,6 +2,7 @@
 
 import AboutSection from "@/components/AboutSection";
 import Hero from "@/components/Hero";
+import MissionVision from "@/components/MissionVision";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         <Hero />
         </div>
         <section><AboutSection /></section>
-      
+        <MissionVision/>
     </div>
   );
 }

@@ -48,6 +48,7 @@ export default function Navbar2() {
                 Gulf Resources
               </div>
               <div className="hidden md:flex gap-4 justify-between text-[12px] font-bold ">
+                
                 {navs.map((item) => (
                   <Link  key={item.id} href={item.link}>
                     <div  className="hover:text-red-500">
