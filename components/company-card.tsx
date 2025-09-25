@@ -24,7 +24,7 @@ export default function CompanyCard({
       rounded-tl-4xl rounded-br-4xl
       overflow-hidden
       shadow-2xl
-      border-b-2 border-r-2 
+      border-2
       border-transparent
       group
       hover:border-red-600  
