@@ -4,7 +4,6 @@ import AboutSection from "@/components/AboutSection";
 import CompaniesHome from "@/components/CompaniesHome";
 import Hero from "@/components/Hero";
 import MissionVision from "@/components/MissionVision";
-import { CometCard } from "@/components/ui/comet-card";
 
 export default function Home() {
   return (
