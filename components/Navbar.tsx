@@ -22,9 +22,9 @@ export default function Navbar2() {
 
   return (
 
-    <div className="sticky top-0 bg-black/60 z-21">
+    <div className="sticky top-0 bg-black/60 z-21 border-b-[1] border-gray-200">
     <div>
-      <div className=" flex h-15 md:h-10   p-4 mx-0 lg:mx-auto max-w-7xl justify-between items-center">
+      <div className=" flex h-15 md:h-5   p-4 mx-0 lg:mx-auto max-w-7xl justify-between items-center">
         <div className="flex text-[12px] font-light md:text-sm justify-center">
           <div className="flex px-4 text-white border-x-1">
             <PhoneIcon className="h-4 w-4 text-red-500 mr-2" />
@@ -40,8 +40,9 @@ export default function Navbar2() {
           </div>
         </div>
       </div>
+
       <div className=" mx-0 lg:mx-auto bg-white rounded-b-2xl max-w-7xl justify-center items-center">
-        <nav className="m-auto  px-4 py-2  sticky top-0 ">
+        <nav className="m-auto  px-4 py-1  sticky top-0 ">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex justify-center items-center gap-8">
               <div className="text-lg font-bold hover:text-green-500">
