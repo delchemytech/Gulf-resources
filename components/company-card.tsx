@@ -60,10 +60,10 @@ export default function CompanyCard({
         {/* Button */}
         <Link href={companyLink} passHref>
           <button className="
-            w-2/3 py-3
+             p-3
             bg-red-800 hover:bg-red-600
             text-white font-semibold
-            rounded-md
+            rounded-md text-[12px]
             transition-colors duration-200
             focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50
           ">

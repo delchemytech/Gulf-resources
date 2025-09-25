@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import CompaniesHome from "@/components/CompaniesHome";
 import Hero from "@/components/Hero";
 import MissionVision from "@/components/MissionVision";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
       <MissionVision />
       <CompaniesHome />
+      <WhyChooseUs/>
     </div>
   );
 }
