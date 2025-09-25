@@ -7,7 +7,7 @@ interface ServiceCardProps {
   imageAlt: string;
   title: string;
   description: string;
-  companyLink: string; // URL for the "VIEW COMPANY" button
+  companyLink: string;
 }
 
 export default function CompanyCard({
@@ -19,29 +19,26 @@ export default function CompanyCard({
 }: ServiceCardProps) {
   return (
     <div className=" h-120
-      relative // Needed for absolute positioning of the pseudo-border
+      relative
       bg-white
-      rounded-tl-4xl rounded-br-4xl           // Rounded corners for the card
-      overflow-hidden        // Ensures image corners match card corners
-      shadow-2xl             // Stronger shadow for depth
-      border-b-2 border-r-2  // Added a subtle border for effect
-      border-transparent     // Default transparent border
-      group                  // For hover effects on children
-      hover:border-red-600   // Red border on hover
-      max-w-sm               // Max width for the card
-      mx-auto                // Center the card
-    ">
-      {/* Custom border effect with pseudo-elements, adjusted to fit the rounded corners better */}
-      {/* <div className="absolute inset-0 rounded-tl-2xl border-2 border-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div> */}
-
-      {/* Image Section */}
+      rounded-tl-4xl rounded-br-4xl
+      overflow-hidden
+      shadow-2xl
+      border-b-2 border-r-2 
+      border-transparent
+      group
+      hover:border-red-600  
+      max-w-sm
+      mx-auto 
+          ">
+      
       <div className="relative h-30 overflow-hidden">
         <Image
           src={imageUrl}
           alt={imageAlt}
-          layout="fill" // Makes image fill the parent div
-          objectFit="cover" // Covers the area without distortion
-          className="rounded-tl-2xl" // Rounds only top corners of image
+          layout="fill" 
+          objectFit="cover"
+          className="rounded-tl-2xl"
         />
       </div>
 
@@ -72,7 +69,6 @@ export default function CompanyCard({
           ">
             VIEW COMPANY
           </button>
-          
         </Link>
         </div>
       </div>

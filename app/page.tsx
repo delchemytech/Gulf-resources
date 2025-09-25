@@ -11,13 +11,9 @@ export default function Home() {
       <div className="-mt-27">
         <Hero />
       </div>
-      <section>
         <AboutSection />
-      </section>
       <MissionVision />
-
       <CompaniesHome />
-      <div>""</div>
     </div>
   );
 }

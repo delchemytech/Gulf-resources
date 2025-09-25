@@ -6,11 +6,10 @@ import {
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
-  ArrowRightIcon,
 } from "@heroicons/react/24/solid";
 
 export default function Navbar2() {
-  const [isOpen, setIsOpen] = useState();
+  // const [isOpen, setIsOpen] = useState();
 
   const navs = [
     { id: "1", title: "HOME", link: "/" },

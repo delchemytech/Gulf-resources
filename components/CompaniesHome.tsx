@@ -41,7 +41,7 @@ const CompaniesHome = () => {
         {data.map((item) => (
           <CometCard key={item.id} className="w-75">
             <CompanyCard
-              imageUrl={item.imageUrl} // Make sure this image exists in your public folder
+              imageUrl={item.imageUrl}
               imageAlt={item.imageAlt}
               title={item.title}
               description={item.description}
