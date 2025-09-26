@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
               grid grid-cols-3 grid-rows-3 gap-4 justify-center
               aspect-square lg:aspect-auto h-[500px]
               "
-          >
+          > 
             {/* ITEM A: 9+ Years Circle (Small Box) */}
             <div className="
                 col-span-1 row-span-1 justify-self-center align-self-center

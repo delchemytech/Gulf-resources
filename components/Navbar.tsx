@@ -51,7 +51,7 @@ export default function Navbar2() {
                 
                 {navs.map((item) => (
                   <Link  key={item.id} href={item.link}>
-                    <div  className="hover:text-red-500">
+                    <div  className="hover:text-red-500 text-black">
                       {" "}
                       {item.title}{" "}
                     </div>
