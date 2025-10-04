@@ -21,7 +21,7 @@ export default function Navbar2() {
 
   return (
 
-    <div className="sticky top-0 bg-black/60 z-21 border-b-[1] border-gray-200">
+    <div className="fixed w-full top-0 backdrop-blur-sm z-23 border-b-[1] border-gray-200">
     <div>
       <div className=" flex h-15 md:h-5   p-4 mx-0 lg:mx-auto max-w-7xl justify-between items-center">
         <div className="flex text-[12px] font-light md:text-sm justify-center">

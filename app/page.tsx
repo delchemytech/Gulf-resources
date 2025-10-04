@@ -9,13 +9,16 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export default function Home() {
   return (
     <div className="bg-white">
-      <div className="-mt-27">
+       <div className="relative">
         <Hero />
       </div>
-        <AboutSection />
+      <AboutSection />
       <MissionVision />
-      <CompaniesHome />
-      <WhyChooseUs/>
+        <CompaniesHome />
+     <WhyChooseUs/>
+
+
+
     </div>
   );
 }
