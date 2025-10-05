@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import LeadershipSection from "@/components/LeadershipSection";
 import MissionVision from "@/components/MissionVision";
 import RevInSection from "@/components/RevInSection";
 import PageHeader from "@/components/ui/PageHeader";
@@ -37,6 +38,7 @@ export default function about() {
       <MissionVision
       />
         <RevInSection/>
+        <LeadershipSection/>
     </div>
 
   );
