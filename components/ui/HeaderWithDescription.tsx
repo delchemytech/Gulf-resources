@@ -1,19 +1,22 @@
 import React from 'react'
 import RedParallelograms from '../Icons/RedParallelograms';
 
-interface headerData  {
+export interface headerData  {
     title:string;
     tagline : string;
     bodyText : string;
+
 }
 
 const HeaderWithDescription = ({title,tagline,bodyText}:headerData) => {
+
+
   return  (
-        <div className="max-w-3xl mx-auto py-8 sm:py-8 md:py-12">
+        <div className="max-w-3xl  py-8 sm:py-8 md:py-4">
           {/* Red Tagline/Header with Red Bars */}
           <div className="flex items-center  mb-4">
             {/* Small Red Bars (Matching the design) */}
-            <RedParallelograms className='w-8 h-4'/>
+            <RedParallelograms className='w-8 h-4 ' />
             <p className="text-base font-semibold tracking-wider uppercase text-red-600">
               {tagline}
             </p>
