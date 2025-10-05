@@ -72,7 +72,7 @@ const Footer = () => {
             </h3>
             <p className="text-gray-400 max-w-lg text-lg">
               Join hundreds of satisfied clients who trust Gulf Resources for
-              their business solutions. Let's discuss how we can support your
+              their business solutions. Let&aposs discuss how we can support your
               success.
             </p>
           </div>
