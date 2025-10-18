@@ -1,34 +1,39 @@
+import Link from "next/link";
+import React from "react";
 
-import Link from 'next/link';
-import React from 'react'
-
-interface buttonContent{
-    buttonText : string;
-    ButtonIcon?: React.ElementType;
-    buttonHref?:string;
-
+interface buttonContent {
+  buttonText: string;
+  ButtonIcon?: React.ElementType;
+  buttonHref?: string;
+  primary?:boolean;
 }
 
 const PrimaryButton = ({
   buttonText,
   ButtonIcon,
-  buttonHref = "#",
+  buttonHref = "#", primary = true
 }: buttonContent) => {
   return (
+    <Link href={buttonHref} className='flex gap-2'>
     <div
-      className="flex w-fit  bg-red-600 p-4 text-white justify-center 
-      items-center gap-2 rounded-md font-bold hover:bg-red-700 uppercase
-    hover:shadow-2xl hover:text-gray-200 tracking-tight text-md transition-colors duration-200 "
+       className={`flex items-center justify-center gap-2 w-fit
+       text-white
+      py-3 px-6 rounded-md 
+      font-semibold uppercase tracking-wide text-xs md:text-sm lg:text-base
+      transition-all duration-300 ease-in-out 
+      ${primary?"hover:bg-red-700 bg-red-600":"hover:bg-green-700 bg-green-600"}
+      hover:shadow-lg hover:shadow-red-500/50
+      transform hover:scale-[1.02]` }
     >
-      <Link href={buttonHref} className='flex gap-2'>
+      
         {/* Text passed via prop */}
         {buttonText}
 
         {/* Conditional Rendering: Only render the icon if the 'Icon' prop exists */}
-        {ButtonIcon && <ButtonIcon className="w-4 h-4 " />}
-      </Link>
-    </div>
+        {ButtonIcon && <ButtonIcon className="w-4 h-4  " />}
+      
+    </div></Link>
   );
 };
 
-export default PrimaryButton
+export default PrimaryButton;

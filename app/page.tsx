@@ -39,7 +39,7 @@ const headerData = {
       <MovingClients />
 
       <ServiceStrip />
-      <ServiceSection />
+      {/* <ServiceSection /> */}
       
     </div>
   );
