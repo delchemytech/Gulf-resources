@@ -21,6 +21,25 @@ const headerData = {
             vectors.`,
 };
 
+
+const mission_data = [
+  {
+    id: "1",
+    title: "Mission",
+    icon: "/mission.svg",
+    alt_text: "Mission Icon",
+    desc: "To deliver exceptional business solutions through our specialized companies, enabling our clients to focus on their core business while we handle their operational needs with professionalism and expertise.",
+  },
+  {
+    id: "2",
+    title: "Vision",
+    icon: "/vision.svg",
+    alt_text: "Mission Icon",
+    desc: "To deliver exceptional business solutions through our specialized companies, enabling our clients to focus on their core business while we handle their operational needs with professionalism and expertise.",
+  },
+  
+];
+
   return (
     <div className="bg-white">
       <div className="relative">
@@ -33,7 +52,7 @@ const headerData = {
         buttonText={"CONTACT WITH US"}
         buttonHref={"/about"}
       />
-      <MissionVision />
+      <MissionVision data= {mission_data}/>
       <CompaniesHome />
       <WhyChooseUs />
       <MovingClients />
