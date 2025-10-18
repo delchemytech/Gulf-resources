@@ -23,39 +23,38 @@ export default function hero() {
         md:justify-start items-start max-w-7xl gap-8"
         >
           <div className=" h-full justify-center items-start flex flex-col  mt-[6.75rem]">
-            <div className="text-center md:text-start text-red-100 text-base md:text-xl font-extrabold">
+            <div className="text-center w-full md:text-start text-red-100 text-base md:text-xl font-extrabold">
               Most Innovative Business Solution
             </div>
             <div>
-            <div className="text-center md:text-start text-white text-4xl sm:text-6xl md:text-7xl font-extrabold">
-              Solution Provider to Your
-            </div>
-            
-            <div className=" text-center md:text-start text-green-300 text-3xl sm:text-4xl md:text-6xl font-extrabold">
-              Business Challenges
-            </div>
+              <div className="text-center md:text-start text-white text-4xl sm:text-6xl md:text-7xl font-extrabold">
+                Solution Provider to Your
+              </div>
+
+              <div className=" text-center md:text-start text-green-300 text-3xl sm:text-4xl md:text-6xl font-extrabold">
+                Business Challenges
+              </div>
             </div>
             <div className="py-8 text-center md:text-start text-white text-sm md:text-base font-bold max-w-3xl leading-normal">
               We specialize in providing comprehensive solutions to help
               businesses tackle their most pressing issues and unlock new
               opportunities for growth.
             </div>
-            
-          </div>
-          <div className="justify-center items-start flex flex-col  mb-[2rem]">
-          <div className="flex gap-4 ">
+          
+          <div className="justify-center items-center md:items-start flex flex-col w-full mb-[2rem]">
+            <div className="flex gap-4 w-full justify-center md:justify-start ">
               <PrimaryButton
                 buttonText={"CONTACT WITH US"}
                 buttonHref="/contact"
                 ButtonIcon={ArrowRightIcon}
-                
               />
               <PrimaryButton
                 buttonText={"Our Services"}
                 buttonHref="/contact"
                 ButtonIcon={ArrowRightIcon}
-                primary = {false}
+                primary={false}
               />
+            </div>
             </div>
           </div>
         </main>

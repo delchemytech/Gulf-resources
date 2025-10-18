@@ -27,7 +27,7 @@ const CompanyCardNew = ({
           src={imageUrl}
           height={200}
           width={100}
-          className="w-full h-32 md:h-64"
+          className="w-full h-36 md:h-64"
           alt={imageAlt}
         />
       </div>

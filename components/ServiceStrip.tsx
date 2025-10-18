@@ -15,7 +15,7 @@ const ServiceStrip = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl md:text-5xl text-center md:text-start md:w-5/6 font-semibold text-white mb-6 leading-tight">
+          <h2 className="text-2xl md:text-5xl text-center md:text-start px-16  md:w-5/6 font-semibold text-white mb-6 leading-tight">
             Get Any Kind Of Consultancy Service Feel Free To Contact Us.
           </h2>
         </div>
