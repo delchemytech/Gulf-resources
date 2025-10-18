@@ -15,6 +15,8 @@ title='Its the title',desc=``,buttonText="VIEW DETAILS"}:cardData) {
     <div className=" bg-white flex flex-col rounded-b-lg md:rounded-lg w-36 md:w-md lg:w-lg drop-shadow-2xl text-sm  md:pb-4">
       <Image
         className="rounded-md md:w-md lg:w-lg h-26 md:max-h-50 w-full object-cover"
+        width={207}
+        height={425}
         src={ImageURL}
         alt="officeImage"
       />

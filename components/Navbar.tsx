@@ -239,7 +239,7 @@ const NavLinkWithDropdown = ({
 };
 
 const Navbar = () => {
-  const [currentPath, setCurrentPath] = useState(usePathname());
+  const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
