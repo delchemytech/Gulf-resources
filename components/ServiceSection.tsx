@@ -69,9 +69,9 @@ const ServiceSection = () => {
           </h2>
           <div className="flex  justify-center items-center gap-4  ">
             {item.services.map((serivce) => (
-              <div className="flex justify-center ">
+              <div  key={serivce.key} className="flex justify-center ">
                 <CardTemp
-                  key={serivce.key}
+                 
                   ImageURL={serivce.ImageURL}
                   title={serivce.title}
                 />

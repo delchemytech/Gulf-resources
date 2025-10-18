@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PrimaryButton from "./PrimaryButton"
 
 interface cardData{
@@ -12,7 +13,7 @@ title='Its the title',desc=``,buttonText="VIEW DETAILS"}:cardData) {
 
   return (
     <div className=" bg-white flex flex-col rounded-b-lg md:rounded-lg w-36 md:w-md lg:w-lg drop-shadow-2xl text-sm  md:pb-4">
-      <img
+      <Image
         className="rounded-md md:w-md lg:w-lg h-26 md:max-h-50 w-full object-cover"
         src={ImageURL}
         alt="officeImage"
