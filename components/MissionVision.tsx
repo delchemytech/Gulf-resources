@@ -24,7 +24,7 @@ const MissionVision = () => {
   return (
     <section className="grid sm:grid-cols-2 justify-center my-10 items-center mx-auto p-4 md:p-8 gap-8 max-w-5xl ">
       {data.map((item) => (
-        <div
+        <div 
           key={item.id}
           className="h-full border-1 flex flex-col items-center space-y-2 md:space-y-5 md:items-start shadow-xl rounded-md p-8  border-gray-200 "
         >
