@@ -27,22 +27,21 @@ const CompanyCardNew = ({
           src={imageUrl}
           height={200}
           width={100}
-          className="w-full h-[200px]"
+          className="w-full h-32 md:h-64"
           alt={imageAlt}
         />
       </div>
       <div className="w-full px-5 group-hover:bg-red-600">
-        <div className="relative py-5">
+        <div className="flex flex-col md:py-5 items-center md:items-start">
           <div className="-mt-[53px] w-fit bg-white p-2 rounded-xl">
-            <Image src="/c1.svg" height={50} width={50} alt="svg " />
+            <img src="/c1.svg"  alt="svg" className='h-10 w-10 md:h-20 md:w-20'/>
           </div>
           <div className="w-full flex flex-col gap-y-4 py-5">
-            <h3 className="text-2xl font-semibold "> {title}</h3>
+            <h3 className="text-base md:text-2xl w-full md:max-w-4/5 text-black font-semibold text-center md:text-start"> {title}</h3>
             <hr className='border-gray-400 border-t-[1px]'/>
-            <p className='text-gray-500 group-hover:text-gray-100'>{description}</p>
+            <p className='text-gray-500 group-hover:text-gray-100 text-xs md:text-base text-center md:text-start'>{description}</p>
           </div>
           <Link href={companyLink} className='flex items-center gap-x-2 font-bold mb-8'>
-            
             view details 
           <ArrowRightIcon className='w-4 h-4'/>
           </Link>
