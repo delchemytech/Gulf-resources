@@ -45,6 +45,67 @@ const Footer = () => {
     },
   ];
 
+  const logo_address = () => {
+    return (
+      <>
+        <div className="mb-6">
+          <div className="flex items-center mb-2">
+            {/* Logo Accent and Text */}
+            <RedParallelograms className="w-8 h-4 text-red-600 mr-2" />
+            <span className="text-3xl font-bold">Logo</span>
+          </div>
+
+          {/* Horizontal rule below the logo text */}
+          <hr className="w-48 h-0.5 border-none bg-gradient-to-r from-red-600 via-red-600 to-[#1C1C1C]" />
+        </div>
+        <p className="text-gray-400 text-xs md:text-sm mb-6 leading-relaxed">
+          1234, Restaurant St, South City <br />
+          New York 0124
+        </p>
+
+        <div className="flex space-x-3">
+          {/* Social Icons based on the image */}
+          <a
+            href="#"
+            className="h-9 w-9 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition"
+          >
+            F
+          </a>
+          <a
+            href="#"
+            className="h-9 w-9 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition"
+          >
+            T
+          </a>
+          <a
+            href="#"
+            className="h-9 w-9 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+          >
+            <svg
+              className="w-4 h-4 text-black"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M16.99 0a7 7 0 01-5.75 11.2V16H10v-4.8h-.25A7 7 0 010 0h3.5v7h3.5V0h3.5v7h3.5V0z" />
+            </svg>
+          </a>
+          <a
+            href="#"
+            className="h-9 w-9 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+          >
+            <svg
+              className="w-4 h-4 text-black"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.5 14.5v-5l6 2.5-6 2.5z" />
+            </svg>
+          </a>
+        </div>
+      </>
+    );
+  };
+
   // Default links data (can be imported from lib/data/constants.js in a real app)
   const DEFAULT_QUICK_LINKS: FooterLink[] = [
     { key: "1", label: "About Us", href: "/about" },
@@ -66,14 +127,14 @@ const Footer = () => {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center 
         justify-between text-center md:text-left "
         >
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-4xl font-bold mb-4 leading-snug">
+          <div className="md:w-1/2 ml-4 mb-8 md:mb-0">
+            <h3 className="text-2xl md:text-5xl font-bold mb-4 leading-snug">
               Ready to Partner with Excellence?
             </h3>
-            <p className="text-gray-400 max-w-lg text-lg">
+            <p className="text-gray-400 max-w-lg text-base md:text-lg">
               Join hundreds of satisfied clients who trust Gulf Resources for
-              their business solutions. Let&aposs discuss how we can support your
-              success.
+              their business solutions. Let&aposs discuss how we can support
+              your success.
             </p>
           </div>
 
@@ -104,100 +165,42 @@ const Footer = () => {
       </div>
 
       {/* 2. Main Content and Links Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-0 0">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10  pt-8 ">
+      <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-0 0">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8  pt-8 ">
           {/* Logo & Address (Col 1-4) */}
-          <div className="col-span-full md:col-span-4 pr-10">
-            <div className="mb-6">
-              <div className="flex items-center mb-2">
-                {/* Logo Accent and Text */}
-                <RedParallelograms className="w-8 h-4 text-red-600 mr-2" />
-                <span className="text-3xl font-bold">Logo</span>
-              </div>
-
-              {/* Horizontal rule below the logo text */}
-              <hr className="w-48 h-0.5 border-none bg-gradient-to-r from-red-600 via-red-600 to-[#1C1C1C]" />
-            </div>
-
-            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              1234, Restaurant St, South City <br />
-              New York 0124
-            </p>
-
-            {/* Social Icons */}
-            <div className="flex space-x-3">
-              {/* Social Icons based on the image */}
-              <a
-                href="#"
-                className="h-9 w-9 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition"
-              >
-                F
-              </a>
-              <a
-                href="#"
-                className="h-9 w-9 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition"
-              >
-                T
-              </a>
-              <a
-                href="#"
-                className="h-9 w-9 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
-              >
-                <svg
-                  className="w-4 h-4 text-black"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M16.99 0a7 7 0 01-5.75 11.2V16H10v-4.8h-.25A7 7 0 010 0h3.5v7h3.5V0h3.5v7h3.5V0z" />
-                </svg>
-              </a>
-              <a
-                href="#"
-                className="h-9 w-9 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
-              >
-                <svg
-                  className="w-4 h-4 text-black"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.5 14.5v-5l6 2.5-6 2.5z" />
-                </svg>
-              </a>
-            </div>
+          <div className="col-span-full md:col-span-3 pr-10">
+            {logo_address()}
           </div>
 
           {/* Quick Links and Company Links (Col 5-12) - Arranged in a flat list with Contact Us last */}
-          <div className="col-span-full md:col-span-8">
+          <div className="col-span-full md:col-span-9 ">
             <div className="flex flex-col  mb-6 gap-4">
               <h4 className="text-xl font-semibold">Quick Links</h4>
               <hr className="w-48 h-0.5 border-none bg-gradient-to-r from-red-600 via-red-600 to-[#1C1C1C]" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4  gap-x-4 gap-y-6">
+            <div className="grid grid-cols-2 md:grid-cols-4  gap-x-12 gap-y-12 ">
               {/* Render Links */}
               {DEFAULT_QUICK_LINKS.map((item) => (
-                <div
-                  key={item.key}
-                  className="h-full w-full  text-white "
-                >
+                <div key={item.key} className="h-full w-full  text-white ">
                   <Link
                     href={item.href}
-                    className="flex group gap-2 items-center justify-start hover:text-red-600"
+                    className="flex group gap-2 items-center justify-start hover:text-red-600 "
                   >
-                    <ArrowRightIcon className="w-4 h-4 group-hover:text-red-600" />
+                    <ArrowRightIcon className="w-4 h-4 group-hover:text-red-600 " />
                     {item.label}
                   </Link>
 
-                  <div className="h-full w-full flex flex-col gap-2 mt-2">
-                  {item.subList && item.subList.map((sItem)=>(
-                     <Link key={sItem.key}
-                     href={sItem.href}
-                     className="flex group gap-2 items-center text-base justify-start hover:text-red-600"
-                   >
-                     {sItem.label}
-                   </Link>
-                
-
-                  ))}   
+                  <div className="h-full w-full flex flex-col mx-4 gap-4 mt-2">
+                    {item.subList &&
+                      item.subList.map((sItem) => (
+                        <Link
+                          key={sItem.key}
+                          href={sItem.href}
+                          className="flex group gap-2 pl-1  items-start text-base justify-start hover:text-red-600"
+                        >
+                          {sItem.label}
+                        </Link>
+                      ))}
                   </div>
                 </div>
               ))}
@@ -206,13 +209,72 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className=" md:hidden mx-12">
+        <div className="grid grid-cols-2 mb-16 ">
+          <div className="grid grid-rows-3">
+            {/* Render Links */}
+            {DEFAULT_QUICK_LINKS.map((item) => (
+              !item.subList && <div
+                key={item.key}
+                className="h-full w-full text-white text-xs "
+              >
+                <Link
+                  href={item.href}
+                  className={`flex group gap-2 items-center justify-start hover:text-red-600 `}
+                >
+                  <ArrowRightIcon className="w-4 h-4 group-hover:text-red-600 " />
+                  {item.label}
+                </Link>
+              </div>
+            ))}
+            </div>
+              <div>
+              {DEFAULT_QUICK_LINKS.map((item)=>(
+                 item.subList && <div
+                 key={item.key}
+                 className="h-full w-full text-white text-xs"
+               >
+                 <Link
+                   href={item.href}
+                   className={`flex group gap-2 items-center justify-start hover:text-red-600 `}
+                 >
+                   <ArrowRightIcon className="w-4 h-4 group-hover:text-red-600 " />
+                   {item.label}
+                 </Link>
+
+                 <div className="h-full w-full flex flex-col ml-6 gap-4 mt-2">
+                  {item.subList &&
+                    item.subList.map((sItem) => (
+                      <Link
+                        key={sItem.key}
+                        href={sItem.href}
+                        className="flex group gap-2 pl-1  items-start text-xs justify-start hover:text-red-600"
+                      >
+                        {sItem.label}
+                      </Link>
+                    ))}
+                </div> 
+               </div>
+              ))}
+
+              </div>
+           
+         
+
+            {/* */}
+          
+        </div>
+
+        {logo_address()}
+      </div>
+
       {/* 3. Copyright Bar */}
       <div className="border-t border-gray-700 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-xs text-gray-400">
-          <p className="mb-3 sm:mb-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between  text-xs text-gray-400">
+          <p className="mb-3 sm:mb-0 text-center">
             Copyright © Gulf Resources. All rights reserved 2025
           </p>
-          <div className="space-x-6">
+          <div className="space-x-6 text-center">
             <Link href="#" className="hover:text-red-600 transition">
               Terms of Use
             </Link>
