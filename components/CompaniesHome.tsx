@@ -35,7 +35,7 @@ const CompaniesHome = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="justify-center text-2xl  md:text-5xl font-extrabold">
+      <div className="justify-center text-2xl text-black md:text-5xl font-extrabold">
         Our Companies
       </div>
       <div className="flex max-w-9xl flex-wrap justify-center my-10 items-center mx-auto px-4 md:px-8 gap-6 md:gap-12">

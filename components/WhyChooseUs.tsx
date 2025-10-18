@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
         <div className="absolute  bottom-0 w-full h-1/2 bg-red-600 transform -skew-y-15 origin-bottom-right translate-y-1/4"></div>
       </div>
 
-      <div className="container mx-auto flex flex-col z-10 md:w-3xl lg:max-w-7xl">
+      <div className="container mx-auto flex flex-col z-10  max-w-xl lg:max-w-7xl ">
         {" "}
         {/* z-10 ensures content is above background shapes */}
 

@@ -27,7 +27,7 @@ const PrimaryButton = ({
     >
       
         {/* Text passed via prop */}
-        {buttonText}
+        <span className="md:text-nowrap">{buttonText}</span>
 
         {/* Conditional Rendering: Only render the icon if the 'Icon' prop exists */}
         {ButtonIcon && <ButtonIcon className="hidden md:flex w-4 h-4  " />}
