@@ -30,7 +30,7 @@ const PrimaryButton = ({
         {buttonText}
 
         {/* Conditional Rendering: Only render the icon if the 'Icon' prop exists */}
-        {ButtonIcon && <ButtonIcon className="w-4 h-4  " />}
+        {ButtonIcon && <ButtonIcon className="hidden md:flex w-4 h-4  " />}
       
     </div></Link>
   );
