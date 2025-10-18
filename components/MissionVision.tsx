@@ -26,11 +26,11 @@ const MissionVision = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className="h-full border-1 flex flex-col items-center md:items-start shadow-xl rounded-md p-8  border-gray-200 "
+          className="h-full border-1 flex flex-col items-center space-y-2 md:space-y-5 md:items-start shadow-xl rounded-md p-8  border-gray-200 "
         >
           <img src={item.icon} alt={item.alt_text} className="w-10 h-10 md:w-20 md:h-20" />
-          <div className="pt-2 text-lg font-bold  ">{item.title} </div>
-          <p className="text-sm font-light text-center md:text-start text-gray-500">{item.desc}</p>
+          <div className="pt-2 text-base md:text-3xl text-black font-bold  ">{item.title} </div>
+          <p className="text-xs md:text-lg font-light text-center md:text-start text-gray-500">{item.desc}</p>
         </div>
       ))}
     </section>
