@@ -106,8 +106,8 @@ const ServiceSect = () => {
   return (
     <div className="container max-w-7xl space-y-8 mx-auto flex flex-col w-fulljustify-center">
       {data.map((item) => (
-        <div>
-          <h1 key={item.id} className="text-center font-semibold text-5xl m-8 ">
+        <div key={item.id}>
+          <h1  className="text-center font-semibold text-5xl m-8 ">
             {item.head}
           </h1>
 
