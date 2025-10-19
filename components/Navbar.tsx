@@ -26,17 +26,17 @@ const NAV_ITEMS: NavItem[] = [
   { label: "SERVICES", href: "/services" },
   {
     label: "OUR COMPANIES",
-    href: "/our-companies",
+    href: "/our-companies/facilities-management",
     children: [
       {
         label: "Gulf Resources Facility Management",
-        href: "/our-companies/c1",
+        href: "/our-companies/facilities-management",
       },
       {
         label: "Gulf Track Business Setup & Visa Works",
-        href: "/our-companies/c2",
+        href: "/our-companies/business-setup&visa-work",
       },
-      { label: "Gulf Track Tours & Travels", href: "/our-companies/c3" },
+      { label: "Gulf Track Tours & Travels", href: "/our-companies/tours-and-travels" },
     ],
   },
 ];

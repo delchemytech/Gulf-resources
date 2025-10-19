@@ -1,6 +1,5 @@
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { ArrowRightIcon } from '@heroicons/react/24/solid'; 
 import HeaderWithDescription, { headerData } from './ui/HeaderWithDescription';
 import PrimaryButton from './ui/PrimaryButton';

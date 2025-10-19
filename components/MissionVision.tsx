@@ -13,7 +13,7 @@ const MissionVision = ({data}: { data: MissionItem[] }) => {
         <div
           key={item.id}
           className={`h-full col-span-${
-            item.id === "3" ? 2 : 1
+            item.id == "3" ? 2 : 1
           }  border-1 flex flex-col items-center space-y-2 md:space-y-5 md:items-start shadow-xl rounded-md p-8  border-gray-200`}
         >
           <img
