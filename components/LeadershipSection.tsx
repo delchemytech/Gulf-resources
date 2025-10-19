@@ -39,14 +39,14 @@ const LeadershipSection = () => {
   ];
 
   return (
-    <section className="container mx-suto max-w-7xl p-8">
+    <section className="container mx-auto max-w-7xl p-8 flex flex-col justify-between">
       <HeaderWithDescription
         tagline="OUR TEAM"
         title="Leadership Team"
         bodyText="Meet the experienced professionals driving Gulf Track Groups success"
       />
 
-      <div className="grid grid-cols-3 grid-rows-2 justify-center items-center w-full gap-8 mt-16">
+      <div className="flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 justify-center items-center w-full gap-8 mt-16">
         {teamData.map((item)=>(
         <div key={item.key} className="flex flex-col rounded-lg p-8 shadow-md border-1 border-gray-200 gap-4">
           <div className="flex p-4 w-fit rounded-full bg-[#F5F7F8] ">
