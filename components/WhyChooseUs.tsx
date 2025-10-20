@@ -31,12 +31,15 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="relative py-16 lg:py-32 overflow-hidden">
-      <div className="absolute  bottom-0 w-full h-9/10 bg-red-200 opacity-10 transform -skew-y-2 origin-bottom-left overflow-hidden">
+    <section className="relative py-16 lg:py-32 overflow-hidden ">
+      <div className="absolute  bottom-0 w-full h-full md:h-9/10 bg-red-200 opacity-10 transform -skew-y-2 
+      origin-bottom-left overflow-hidden">
         {/* Absolute Background Shape 1 (Top Left Angled Red Line/Overlay) */}
-        <div className="absolute -top-10 left-0 w-full h-1/2 bg-red-600 transform -skew-y-15 origin-top-left -translate-y-1/4"></div>
+        <div className="absolute -top-20 md:-top-10 left-0 w-full h-1/2 bg-red-600 transform -skew-y-15 
+        origin-top-left -translate-y-3/4 md:-translate-y-1/2 lg:-translate-1/4"></div>
 
-        <div className="absolute  bottom-0 w-full h-1/2 bg-red-600 transform -skew-y-15 origin-bottom-right translate-y-1/4"></div>
+        <div className="absolute  -bottom-10 md:botom-0 w-full h-1/2 bg-red-600 transform -skew-y-15 
+        origin-bottom-right translate-y-3/4 md:translate-y-1/2 lg:translate-1/4"></div>
       </div>
 
       <div className="container mx-auto flex flex-col z-10  max-w-xl lg:max-w-7xl ">
