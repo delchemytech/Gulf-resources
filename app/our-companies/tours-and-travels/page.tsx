@@ -59,7 +59,7 @@ const services =  [
 
 const page = () => {
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 bg-white">
       <PageHeader {...pageHeaderData} />
       <About {...AboutCompany} />
       <CompaniesService Services={services}/>

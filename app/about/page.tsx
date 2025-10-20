@@ -49,7 +49,7 @@ export default function about() {
 
   return (
 
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-col space-y-4 bg-white">
       <PageHeader
         tagline="OUR STORY"
         bodyText="Building excellence across the Gulf region through diversified business solutions and unwavering commitment to quality service delivery."

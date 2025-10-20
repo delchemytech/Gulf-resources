@@ -12,7 +12,7 @@ const pageHeaderData = {
 
 const page = () => {
   return (
-    <section className='container mx-auto max-w-7xl flex flex-col justify-center space-y-8'>
+    <section className='container mx-auto max-w-7xl flex flex-col justify-center space-y-8 bg-white'>
       <PageHeader {...pageHeaderData}/>
       <ContactForm/>
       <CompanyContacts/>
