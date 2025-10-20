@@ -61,7 +61,7 @@ const services =  [
 
 const page = () => {
   return (
-    <div className="space-y-16 mb-16 bg-white">
+    <div className="space-y-16 pb-16 bg-white">
       <PageHeader {...pageHeaderData} />
       <About {...AboutCompany} />
       <CompaniesService Services={services}/>

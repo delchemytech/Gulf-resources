@@ -4,9 +4,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='space-y-16 mb-16 bg-white'>
+    <div className='space-y-16 pb-16 bg-white z-0 '>
       <PageHeader
-        tagline="OUR SERVICES"
+        tagline="OUR SERVICES "
         bodyText="Building excellence across the Gulf region through diversified business
          solutions and unwavering commitment to quality service delivery."
         title="Service We Provide"

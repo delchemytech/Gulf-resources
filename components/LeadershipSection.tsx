@@ -52,8 +52,8 @@ const LeadershipSection = () => {
           <div className="flex p-4 w-fit rounded-full bg-[#F5F7F8] ">
             <Image src={item.imageURL} height={50} width={50} alt={item.imgAlt}/>
           </div>
-          <div className="font-semibold text-2xl ">{item.name}</div>
-          <div>{item.pos} </div>
+          <div className="font-semibold text-black text-2xl ">{item.name}</div>
+          <div className="text-black">{item.pos} </div>
           <div className="text-gray-400">
             {item.desc}
           </div>

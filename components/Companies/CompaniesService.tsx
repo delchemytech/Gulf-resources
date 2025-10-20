@@ -13,7 +13,7 @@ const CompaniesService = ({Services}:{Services:service[]}) => {
     <div className='mb-16'>
       <div className="container max-w-7xl space-y-8 mx-auto flex flex-col w-fulljustify-center">
 
-          <h1  className="text-center font-semibold text-5xl m-8 ">
+          <h1  className="text-center text-black font-semibold text-5xl m-8 ">
             OUR SERVICES
           </h1>
 

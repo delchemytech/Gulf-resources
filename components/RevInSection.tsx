@@ -5,7 +5,7 @@ import React from "react";
 
 const RevInSection = () => {
   return (
-    <div className="relative flex flex-col gap-16 container mx-auto max-w-7xl w-full h-96 md:h-[500px] p-12 md:p-48 
+    <div className="relative z-20 flex flex-col gap-16 container mx-auto max-w-7xl w-full h-96 md:h-[500px] p-12 md:p-48 
      text-white items-center justify-center">
       <Image
         src={"/images/strippedBgRed.png"}

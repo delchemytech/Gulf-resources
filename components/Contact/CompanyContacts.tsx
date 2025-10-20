@@ -1,6 +1,7 @@
 import React from 'react'
 import CompanyContactsCard from './CompanyContactsCard'
 import { CometCard } from '../ui/comet-card';
+import CompanyCardNew from '../ui/CompanyCardNew';
 
 const data = [
     {
@@ -34,14 +35,16 @@ const data = [
 
 const CompanyContacts = () => {
   return (
-<div className="container flex flex-col  justify-center items-center">
+<div className="flex flex-col justify-center items-center">
       <div className="justify-center text-2xl text-black md:text-5xl font-extrabold">
         Our Companies
       </div>
-      <div className="flex max-w-7xl flex-wrap justify-center my-10 items-center mx-auto px-4 md:px-8 gap-6 md:gap-6">
+      <div className="flex max-w-9xl flex-wrap justify-center my-10 items-center mx-auto px-4 md:px-8 gap-6 md:gap-12">
         {data.map((item) => (
+          <div key={item.id} className="max-w-sm">
             <CompanyContactsCard key={item.id} {...item}
             />
+          </div>
         ))}
       </div>
     </div>

@@ -11,15 +11,15 @@ interface data {
 
 const PageHeader = ({ tagline, title, bodyText, alt = "Page Bg" }: data) => {
   return (
-    <div>
+    <div className="z-10">
       <div className="relative flex w-screen h-[500px]  text-white items-center justify-start">
         <Image
           src={"/images/pageHeaderBg.png"}
           fill
           alt={alt}
-          className="object-cover  -z-30"
+          className="object-cover "
         />
-        <div className="container max-w-7xl mx-auto">
+        <div className="container max-w-7xl mx-auto z-10">
           <div className=" p-8 max-w-3xl  py-8 sm:py-8 md:py-12">
             {/* Red Tagline/Header with Red Bars */}
             <div className="flex items-center  mb-4">

@@ -85,7 +85,7 @@ const services = [
 
 const page = () => {
   return (
-    <div className="space-y-16 bg-white">
+    <div className="space-y-16 pb-16 bg-white">
       <PageHeader {...pageHeaderData} />
       <About {...AboutCompany} />
       <MissionVision data = {mission_data}/>

@@ -44,7 +44,7 @@ const CompanyContactsCard = ({
   companyLink,
 }: ServiceCardProps) => {
   return (
-    <div className="rounded-2xl flex flex-col w-xs  md:max-w-sm shadow-2xl overflow-hidden group hover:text-white">
+    <div className="rounded-2xl flex flex-col shadow-2xl overflow-hidden group hover:text-white">
       <div>
         <Image
           src={imageUrl}

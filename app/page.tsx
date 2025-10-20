@@ -41,7 +41,7 @@ const mission_data = [
 ];
 
   return (
-    <div className="bg-white mb-16">
+    <div className="bg-white pb-16">
       <div className="relative">
         <Hero />
       </div>
