@@ -30,7 +30,7 @@ export default function CTAButton({buttonText,buttonColorClass,buttonWrapperColo
       active:scale-100 before:content-[''] before:absolute before:inset-0 
       before:bg-[conic-gradient(from_0deg,_#FF8C00,_#FF8C0030,_#FF8C00)] button-wrapper`}>
         <Link href={'/contact-us'}>
-        <button className={"relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-medium text-sm " + buttonColorClass }>
+        <button className={"relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-bold text-sm uppercase " + buttonColorClass }>
           {buttonText}
         </button>
         </Link>

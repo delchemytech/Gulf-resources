@@ -16,9 +16,11 @@ export default function Home() {
 const headerData = {
   title: "Gulf Resources",
   tagline: "ABOUT OUR COMPANY",
-  bodyText: `Appropriately empower dynamic leadership skills after business portals.
-            Globally myocardinate interactive supply chains with distinctive quality
-            vectors.`,
+  bodyText: `Gulf Resources Facilities Management L.L.C and Gulf Track Business Setup Services are recognized providers of professional manpower, recruitment, business setup, and corporate support services across the UAE and GCC region.
+
+Established in 2016, we have built a reputation for reliability, integrity, and excellence, delivering efficient and cost-effective solutions tailored to meet our clients' business needs.
+
+With our head office in Abu Dhabi – Musaffah 37 and an international branch in Kerala, India, we proudly serve local and overseas clients with seamless operational support.`,
 };
 
 
@@ -58,7 +60,7 @@ const mission_data = [
       <MovingClients />
 
       <ServiceStrip />
-      <ServiceSection />
+      {/* <ServiceSection /> */}
       
     </div>
   );

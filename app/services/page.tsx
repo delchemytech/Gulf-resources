@@ -11,7 +11,6 @@ const page = () => {
          solutions and unwavering commitment to quality service delivery."
         title="Service We Provide"
       />
-
       <ServiceSect />
     </div>
   );

@@ -31,7 +31,7 @@ const PageHeader = ({ tagline, title, bodyText, alt = "Page Bg" }: data) => {
             </div>
 
             {/* Main Title */}
-            <h2 className="text-5xl   font-extrabold text-white mb-6 leading-tight">
+            <h2 className="text-5xl font-extrabold text-white mb-6 leading-none">
               {title}
             </h2>
 

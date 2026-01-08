@@ -24,11 +24,11 @@ title='Its the title',desc=``,buttonText="VIEW DETAILS",show_button=true }:cardD
         src={ImageURL}
         alt="officeImage"
       />
-      <div className="flex flex-col justify-start gap-4 pt-2 md:p-4">
-        <p className="text-gray-900 text-[10px] md:text-3xl text-center md:text-start p-2 h-12 font-semibold ml-1 md:ml-2 mt-1 md:mt-2  leading-tight">
+      <div className="flex flex-col justify-start pt-2 md:p-4">
+        <p className="text-gray-900 text-[10px] md:text-3xl text-center md:text-start p-2 font-semibold ml-1 md:ml-2 mt-1 md:mt-2 leading-none">
           {title}
         </p>
-        <p className="hidden md:flex text-gray-500 mt-7  ml-2">{desc}</p>
+        <p className="hidden md:flex text-gray-500 mt-2 ml-2">{desc}</p>
         {show_button && (
           <div className="hidden ml-1 md:ml-2  md:flex justify-start">
             <PrimaryButton buttonText={buttonText} />

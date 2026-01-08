@@ -23,12 +23,12 @@ const HeaderWithDescription = ({title,tagline,bodyText}:headerData) => {
           </div>
     
           {/* Main Title */}
-          <h2 className="text-xl md:text-5xl text-center md:text-start font-extrabold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl text-center md:text-start font-bold text-gray-900 mb-6 leading-tight">
             {title}
           </h2>
     
           {/* Body Text */}
-          <p className="text-base text-center md:text-start text-gray-600 leading-relaxed">
+          <p className="text-sm md:text-base text-center md:text-start text-gray-600 leading-relaxed">
             {bodyText}
           </p>
         </div>

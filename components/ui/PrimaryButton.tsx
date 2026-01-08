@@ -19,7 +19,7 @@ const PrimaryButton = ({
        className={`flex items-center justify-center gap-2 w-fit
        text-white
       py-3 px-6 rounded-md 
-      font-semibold uppercase tracking-wide text-xs md:text-sm lg:text-base
+      font-semibold uppercase tracking-wide text-sm md:text-base
       transition-all duration-300 ease-in-out 
       ${primary?"hover:bg-red-700 bg-red-600":"hover:bg-green-700 bg-green-600"}
       hover:shadow-lg hover:shadow-red-500/50

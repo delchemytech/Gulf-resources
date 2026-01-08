@@ -79,7 +79,7 @@ export const CometCard = ({
   };
 
   return (
-    <div className={cn("perspective-distant transform-3d", className)}>
+    <div className={cn("perspective-distant transform-3d h-full", className)}>
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -96,7 +96,7 @@ export const CometCard = ({
           z: 50,
           transition: { duration: 0.2 },
         }}
-        className="relative rounded-tl-4xl rounded-br-4xl"
+        className="relative rounded-tl-4xl rounded-br-4xl h-full"
       >
         {children}
         <motion.div

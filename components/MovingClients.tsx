@@ -31,7 +31,7 @@ export const MovingClients = () => {
                 }
             `}
             </style>
-            <h3 className="mt-16 text-base text-center text-slate-400 mb-14 font-medium">
+            <h3 className="mt-16 text-sm md:text-base text-center text-slate-400 mb-14 font-bold">
                 Trusting by leading brands, including —
             </h3>
             <div className="overflow-hidden w-full relative max-w-5xl mx-auto select-none mb-8">

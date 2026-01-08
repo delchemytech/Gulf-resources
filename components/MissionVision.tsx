@@ -8,23 +8,23 @@ interface MissionItem {
 
 const MissionVision = ({data}: { data: MissionItem[] }) => {
   return (
-    <section className="grid sm:grid-cols-2 justify-center my-10 items-center mx-auto p-4 md:p-8 gap-8 max-w-5xl ">
+    <section className="grid sm:grid-cols-2 justify-center my-8 items-stretch mx-auto p-4 md:p-6 gap-6 max-w-4xl">
       {data.map((item) => (
         <div
           key={item.id}
           className={`h-full col-span-${
             item.id == "3" ? 2 : 1
-          }  border-1 flex flex-col items-center space-y-2 md:space-y-5 md:items-start shadow-xl rounded-md p-8  border-gray-200`}
+          } border flex flex-col items-center space-y-2 md:space-y-3 md:items-start shadow-md rounded-lg p-5 md:p-6 border-gray-200 bg-white`}
         >
           <img
             src={item.icon}
             alt={item.alt_text}
-            className="w-10 h-10 md:w-20 md:h-20"
+            className="w-8 h-8 md:w-12 md:h-12"
           />
-          <div className="pt-2 text-base md:text-3xl text-black font-bold  ">
-            {item.title}{" "}
+          <div className="pt-1 text-lg md:text-xl text-black font-bold">
+            {item.title}
           </div>
-          <p className="text-xs md:text-lg font-light text-center md:text-start text-gray-500">
+          <p className="text-sm md:text-base font-medium text-center md:text-start text-gray-600 leading-relaxed">
             {item.desc}
           </p>
         </div>
