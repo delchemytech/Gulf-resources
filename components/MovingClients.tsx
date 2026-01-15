@@ -1,3 +1,5 @@
+import NextImage from "next/image";
+
 export const MovingClients = () => {
     const companiesLogo = [
         { name: "Framer", logo: "https://saasly.prebuiltui.com/assets/companies-logo/framer.svg", },
@@ -39,7 +41,7 @@ export const MovingClients = () => {
 
                 <div className="flex marquee-inner will-change-transform max-w-5xl mx-auto">
                     {[...companiesLogo, ...companiesLogo].map((company, index) => (
-                        <img key={index} className="mx-11" src={company.logo} alt={company.name} />
+                        <NextImage key={index} className="mx-11" src={company.logo} alt={company.name} width={100} height={40} />
                     ))}
                 </div>
 

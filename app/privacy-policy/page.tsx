@@ -21,7 +21,7 @@ const PrivacyPolicyPage = () => {
               Last Updated: January 15, 2025
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Gulf Resources Facilities Management L.L.C and its affiliated companies ("Gulf Resources," "we," "us," or "our") are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services or visit our website.
+              Gulf Resources Facilities Management L.L.C and its affiliated companies (&quot;Gulf Resources,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services or visit our website.
             </p>
           </section>
 
@@ -147,7 +147,7 @@ const PrivacyPolicyPage = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children&apos;s Privacy</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
             </p>
@@ -163,7 +163,7 @@ const PrivacyPolicyPage = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Changes to This Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically for any changes.
+              We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated &quot;Last Updated&quot; date. We encourage you to review this Privacy Policy periodically for any changes.
             </p>
           </section>
 

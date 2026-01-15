@@ -1,4 +1,4 @@
-import CompaniesHome from '@/components/CompaniesHome';
+
 import CompanyContacts from '@/components/Contact/CompanyContacts';
 import ContactForm from '@/components/Contact/ContactForm';
 import PageHeader from '@/components/ui/PageHeader'

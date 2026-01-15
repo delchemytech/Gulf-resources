@@ -2,11 +2,9 @@
 
 import AboutSection from "@/components/AboutSection";
 import CompaniesHome from "@/components/CompaniesHome";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MissionVision from "@/components/MissionVision";
 import { MovingClients } from "@/components/MovingClients";
-import ServiceSection from "@/components/ServiceSection";
 import ServiceStrip from "@/components/ServiceStrip";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { Target, Eye } from "lucide-react";

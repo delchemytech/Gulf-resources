@@ -1,7 +1,6 @@
 import React from 'react'
 import CompanyContactsCard from './CompanyContactsCard'
-import { CometCard } from '../ui/comet-card';
-import CompanyCardNew from '../ui/CompanyCardNew';
+
 import { Building2, FileCheck, Plane } from "lucide-react";
 
 const data = [

@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import { ArrowRightIcon } from '@heroicons/react/24/solid'; 
-import HeaderWithDescription, { headerData } from './ui/HeaderWithDescription';
+import { headerData } from './ui/HeaderWithDescription';
 import PrimaryButton from './ui/PrimaryButton';
 import RedParallelograms from './Icons/RedParallelograms';
 

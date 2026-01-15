@@ -8,7 +8,7 @@ interface buttonEssentials {
     buttonWrapperColorHex?:string;
 }
 
-export default function CTAButton({buttonText,buttonColorClass,buttonWrapperColorHex="#FFD700"}:buttonEssentials) {
+export default function CTAButton({buttonText,buttonColorClass}:buttonEssentials) {
   return (
     <>
       <style>{`

@@ -1,5 +1,5 @@
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image'
+import NextImage from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import type { LucideIcon } from 'lucide-react';
@@ -30,7 +30,7 @@ const CompanyCardNew = ({
       {/* Image Container with Icon Overlay */}
       <div className="relative w-full h-48 md:h-56 overflow-visible">
         <div className="w-full h-full overflow-hidden rounded-t-2xl">
-          <Image
+          <NextImage
             src={imageUrl}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -42,7 +42,7 @@ const CompanyCardNew = ({
           {Icon ? (
             <Icon className="h-10 w-10 md:h-14 md:w-14 text-red-600" strokeWidth={1.5} />
           ) : (
-            <img src="/c1.svg" alt="svg" className='h-10 w-10 md:h-14 md:w-14'/>
+            <NextImage src="/c1.svg" alt="svg" width={56} height={56} className='h-10 w-10 md:h-14 md:w-14'/>
           )}
         </div>
       </div>

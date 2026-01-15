@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import NextImage from "next/image";
 
 interface MissionItem {
   id: string;
@@ -24,9 +25,11 @@ const MissionVision = ({data}: { data: MissionItem[] }) => {
             {LucideIconComponent ? (
               <LucideIconComponent className="w-8 h-8 md:w-12 md:h-12 text-red-600" />
             ) : item.icon ? (
-              <img
+              <NextImage
                 src={item.icon}
-                alt={item.alt_text}
+                alt={item.alt_text || "icon"}
+                width={48}
+                height={48}
                 className="w-8 h-8 md:w-12 md:h-12"
               />
             ) : null}

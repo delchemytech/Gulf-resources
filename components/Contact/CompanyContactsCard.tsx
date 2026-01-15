@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImage from 'next/image';
 import { MapPin, Phone, type LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
@@ -46,7 +46,7 @@ const CompanyContactsCard = ({
   return (
     <div className="rounded-2xl flex flex-col shadow-2xl overflow-hidden group hover:text-white h-full">
       <div className="relative w-full h-36 md:h-64 overflow-visible">
-        <Image
+        <NextImage
           src={imageUrl}
           fill
           className="object-cover"
@@ -56,7 +56,7 @@ const CompanyContactsCard = ({
             {Icon ? (
               <Icon className="h-10 w-10 md:h-20 md:w-20 text-red-600" strokeWidth={1.5} />
             ) : (
-              <img src="/c1.svg"  alt="svg" className='h-10 w-10 md:h-20 md:w-20'/>
+              <NextImage src="/c1.svg" alt="svg" width={80} height={80} className='h-10 w-10 md:h-20 md:w-20'/>
             )}
         </div>
       </div>

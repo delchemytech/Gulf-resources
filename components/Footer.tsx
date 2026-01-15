@@ -15,17 +15,7 @@ interface FooterLink {
   subList?: FooterLink[];
 }
 
-// --- Helper Icon Component (Red Arrow) ---
-const ArrowIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    className="w-3 h-3 text-red-600 mr-2 flex-shrink-0"
-    fill="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
-  </svg>
-);
+
 
 const socialLinks = [
   { icon: Facebook, href: "https://facebook.com", label: "Facebook" },

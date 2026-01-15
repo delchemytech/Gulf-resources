@@ -28,7 +28,7 @@ const TermsOfUsePage = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              By accessing and using the services provided by Gulf Resources Facilities Management L.L.C, Gulf Track Typing Services L.L.C, and Gulf Track Tours & Travels (collectively "Gulf Resources," "we," "us," or "our"), you accept and agree to be bound by these Terms of Use and our Privacy Policy.
+              By accessing and using the services provided by Gulf Resources Facilities Management L.L.C, Gulf Track Typing Services L.L.C, and Gulf Track Tours & Travels (collectively &quot;Gulf Resources,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), you accept and agree to be bound by these Terms of Use and our Privacy Policy.
             </p>
           </section>
 
