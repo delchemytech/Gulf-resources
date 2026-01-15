@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
         <div className="absolute -top-20 md:-top-10 left-0 w-full h-1/2 bg-red-600 transform -skew-y-15 
         origin-top-left -translate-y-3/4 md:-translate-y-1/2 lg:-translate-1/4"></div>
 
-        <div className="absolute  -bottom-10 md:botom-0 w-full h-1/2 bg-red-600 transform -skew-y-15 
+        <div className="absolute  -bottom-10 md:bottom-0 w-full h-1/2 bg-red-600 transform -skew-y-15 
         origin-bottom-right translate-y-3/4 md:translate-y-1/2 lg:translate-1/4"></div>
       </div>
 

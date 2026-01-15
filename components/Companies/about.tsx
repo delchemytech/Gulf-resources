@@ -24,7 +24,7 @@ const About = ({imageURL,alt,headerData,buttonText,buttonHref}:data) => {
           src={imageURL}
           alt = {alt}
           fill
-          className="object-cover rounded-br-xl rounded-xl-md md:rounded-br-[64px] md:rounded-tl-4xl"
+          className="object-cover rounded-br-xl rounded-xl md:rounded-br-[64px] md:rounded-tl-[32px]"
         />
       </div>
 

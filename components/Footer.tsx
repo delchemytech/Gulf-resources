@@ -67,8 +67,8 @@ const Footer = () => {
           <hr className="w-48 h-0.5 border-none bg-gradient-to-r from-red-600 via-red-600 to-[#1C1C1C]" />
         </div>
         <p className="text-gray-400 text-sm md:text-base mb-6 leading-relaxed">
-          Abu Dhabi – Musaffah 37 <br />
-          United Arab Emirates
+          Office 4, Musaffah 37, Opp. Gift Action <br />
+          Abu Dhabi, UAE
         </p>
 
         <div className="flex space-x-3">
@@ -231,10 +231,10 @@ const Footer = () => {
             Copyright © Gulf Resources. All rights reserved 2025
           </p>
           <div className="space-x-6 text-center">
-            <Link href="#" className="hover:text-red-600 transition text-sm font-bold">
+            <Link href="/terms-of-use" className="hover:text-red-600 transition text-sm font-bold">
               Terms of Use
             </Link>
-            <Link href="#" className="hover:text-red-600 transition text-sm font-bold">
+            <Link href="/privacy-policy" className="hover:text-red-600 transition text-sm font-bold">
               Privacy Policy
             </Link>
           </div>

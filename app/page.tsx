@@ -9,6 +9,7 @@ import { MovingClients } from "@/components/MovingClients";
 import ServiceSection from "@/components/ServiceSection";
 import ServiceStrip from "@/components/ServiceStrip";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import { Target, Eye } from "lucide-react";
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ const headerData = {
 
 Established in 2016, we have built a reputation for reliability, integrity, and excellence, delivering efficient and cost-effective solutions tailored to meet our clients' business needs.
 
-With our head office in Abu Dhabi – Musaffah 37 and an international branch in Kerala, India, we proudly serve local and overseas clients with seamless operational support.`,
+With our head office at Office 4, Musaffah 37, Opp. Gift Action, Abu Dhabi and an international branch in Kerala, India, we proudly serve local and overseas clients with seamless operational support.`,
 };
 
 
@@ -28,16 +29,14 @@ const mission_data = [
   {
     id: "1",
     title: "Mission",
-    icon: "/mission.svg",
-    alt_text: "Mission Icon",
+    lucideIcon: Target,
     desc: "To deliver exceptional business solutions through our specialized companies, enabling our clients to focus on their core business while we handle their operational needs with professionalism and expertise.",
   },
   {
     id: "2",
     title: "Vision",
-    icon: "/vision.svg",
-    alt_text: "Mission Icon",
-    desc: "To deliver exceptional business solutions through our specialized companies, enabling our clients to focus on their core business while we handle their operational needs with professionalism and expertise.",
+    lucideIcon: Eye,
+    desc: "To be the leading partner of choice in the Gulf region, recognized for our commitment to excellence, innovation, and sustainable growth across all our business sectors.",
   },
   
 ];
@@ -48,10 +47,10 @@ const mission_data = [
         <Hero />
       </div>
       <AboutSection
-        imageURL={"/workers.png"}
+        imageURL={"/about_workers.png"}
         alt={"Two workers smiling"}
         headerData={headerData}
-        buttonText={"CONTACT WITH US"}
+        buttonText={"LEARN MORE"}
         buttonHref={"/about"}
       />
       <MissionVision data= {mission_data}/>

@@ -20,13 +20,13 @@ const data = [
       },
       {
         key: 13,
-        ImageURL: "/company-business.png",
+        ImageURL: "/building_maintenance.png",
         title: "Buildings Maintenance",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
       },
       {
         key: 14,
-        ImageURL: "/company-business.png",
+        ImageURL: "/manpower_resources.png",
         title: "Manpower Resourses",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
       },
@@ -45,21 +45,21 @@ const data = [
       },
       {
         key: 22,
-        ImageURL: "/company-business.png",
+        ImageURL: "/govt_services.png",
         title: "Govt. Entity Services",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 23,
-        ImageURL: "/company-business.png",
+        ImageURL: "/legal_typing.png",
         title: "Legal Typing",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 24,
-        ImageURL: "/company-business.png",
+        ImageURL: "/document_clearance.png",
         title: "Document Clearance",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
@@ -86,14 +86,14 @@ const data = [
       },
       {
         key: 33,
-        ImageURL: "/company-business.png",
+        ImageURL: "/hotel_reservation.png",
         title: "Hotel Reservations",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 34,
-        ImageURL: "/company-business.png",
+        ImageURL: "/tour_packages.png",
         title: "Tour Packages",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      

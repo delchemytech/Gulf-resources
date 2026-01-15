@@ -6,12 +6,13 @@ interface service {
     ImageURL:string;
     title:string;
     desc:string;
+    points?:string[];
 }
 
 const CompaniesService = ({Services}:{Services:service[]}) => {
   return (
     <div className='mb-16'>
-      <div className="container max-w-7xl space-y-8 mx-auto flex flex-col w-fulljustify-center">
+      <div className="container max-w-7xl space-y-8 mx-auto flex flex-col w-full justify-center">
 
           <h1  className="text-center text-black font-semibold text-5xl m-8 ">
             OUR SERVICES

@@ -6,7 +6,7 @@ const LeadershipSection = () => {
   const teamData = [
     {
       key: "1",
-      imageURL: "/c1.svg",
+      imageURL: "/leader_1.png",
       imgAlt: "svg",
       name: "Ahmed Al-Mansouri",
       pos: "Chief Executive Officer",
@@ -14,7 +14,7 @@ const LeadershipSection = () => {
     },
     {
         key: "2",
-        imageURL: "/c1.svg",
+        imageURL: "/leader_1.png",
         imgAlt: "svg",
         name: "Ahmed Al-Mansouri",
         pos: "Chief Executive Officer",
@@ -22,7 +22,7 @@ const LeadershipSection = () => {
       },
       {
         key: "3",
-        imageURL: "/c1.svg",
+        imageURL: "/leader_1.png",
         imgAlt: "svg",
         name: "Ahmed Al-Mansouri",
         pos: "Chief Executive Officer",
@@ -30,7 +30,7 @@ const LeadershipSection = () => {
       },
       {
         key: "4",
-        imageURL: "/c1.svg",
+        imageURL: "/leader_1.png",
         imgAlt: "svg",
         name: "Ahmed Al-Mansouri",
         pos: "Chief Executive Officer",

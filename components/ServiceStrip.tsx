@@ -32,7 +32,7 @@ const ServiceStrip = () => {
           </div>
 
           <h2 className="text-4xl md:text-5xl text-center md:text-start px-16  md:w-5/6 font-bold text-white mb-6 leading-tight">
-            Get Any Kind Of Consultancy Service Feel Free To Contact Us.
+            Looking for expert consultancy? Contact us today.
           </h2>
         </div>
         <div className="mr-0 md:mr-4">

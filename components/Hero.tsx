@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import PrimaryButton from "./ui/PrimaryButton";
-import SecondaryButton from "./ui/SecondaryButton";
 import RedParallelograms from "./Icons/RedParallelograms";
 
 export default function hero() {
@@ -10,7 +9,7 @@ export default function hero() {
     <section className="h-screen bg-amber-400">
       <div className="relative w-full min-h-screen ">
         <Image
-          src={"/bg2.png"}
+          src={"/hero_bg.png"}
           fill
           alt={"Hero background"}
           priority
@@ -46,13 +45,13 @@ export default function hero() {
           <div className="justify-center items-center md:items-start flex flex-col w-full mb-[2rem]">
             <div className="flex gap-4 w-full justify-center md:justify-start ">
               <PrimaryButton
-                buttonText={"CONTACT WITH US"}
-                buttonHref="/contact"
+                buttonText={"CONTACT US"}
+                buttonHref="/contact-us"
                 ButtonIcon={ArrowRightIcon}
               />
               <PrimaryButton
                 buttonText={"Our Services"}
-                buttonHref="/contact"
+                buttonHref="/services"
                 ButtonIcon={ArrowRightIcon}
                 primary={false}
               />

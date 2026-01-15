@@ -4,6 +4,7 @@ import { CheckCircle, ShieldCheck } from "lucide-react";
 interface WhyClientsChooseUsProps {
   reasons?: string[];
   safetyText?: string;
+  showSafety?: boolean;
 }
 
 const defaultReasons = [
@@ -19,6 +20,7 @@ const defaultSafetyText =
 const WhyClientsChooseUs = ({
   reasons = defaultReasons,
   safetyText = defaultSafetyText,
+  showSafety = true,
 }: WhyClientsChooseUsProps) => {
   return (
     <section className="py-16 bg-gray-50">
@@ -28,25 +30,27 @@ const WhyClientsChooseUs = ({
         </h2>
 
         {/* Health, Safety & Quality */}
-        <div className="flex items-start gap-4 bg-white rounded-lg p-5 mb-8 border border-gray-100 shadow-sm">
-          <ShieldCheck className="w-8 h-8 text-red-600 flex-shrink-0 mt-0.5" />
-          <div>
-            <h3 className="text-base font-semibold text-gray-900 mb-1">
-              Health, Safety & Quality
-            </h3>
-            <p className="text-sm text-gray-600">{safetyText}</p>
+        {showSafety && (
+          <div className="flex items-start gap-4 bg-white rounded-lg p-5 mb-8 border border-gray-100">
+            <ShieldCheck className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                Health, Safety & Quality
+              </h3>
+              <p className="text-sm text-gray-600">{safetyText}</p>
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Reasons Grid */}
+        {/* Reasons */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-sm border border-gray-100"
+              className="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100"
             >
               <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0" />
-              <span className="text-sm font-medium text-gray-800">{reason}</span>
+              <span className="text-sm text-gray-800">{reason}</span>
             </div>
           ))}
         </div>

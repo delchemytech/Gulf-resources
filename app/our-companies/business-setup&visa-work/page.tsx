@@ -1,76 +1,136 @@
-import CompaniesService from "@/components/Companies/CompaniesService";
 import About from "@/components/Companies/about";
+import CompaniesService from "@/components/Companies/CompaniesService";
+import WhyClientsChooseUs from "@/components/Companies/WhyClientsChooseUs";
 import MissionVision from "@/components/MissionVision";
-import WhyChooseUs from "@/components/WhyChooseUs";
 import PageHeader from "@/components/ui/PageHeader";
+import { Target, Eye } from "lucide-react";
 import React from "react";
 
 const pageHeaderData = {
   tagline: "OUR COMPANIES",
   bodyText:
-    "Your trusted partner for all documentation and legal typing needs",
-  title: "Business Setup & Visa Works",
+    "Comprehensive typing, visa, business setup, insurance, and government documentation services delivered with accuracy, speed, and reliability.",
+  title: "Typing & PRO Services in Abu Dhabi",
 };
 
-
-
 const AboutCompany = {
-  imageURL: "/images/companies/visa/about.png",
-  alt: "About us",
+  imageURL: "/visa_about.png",
+  alt: "About Gulf Track Typing Services",
   headerData: {
-    title: "Gulf Track Business Setup & Visa Works",
-    tagline: "ABOUT OUR COMPANY",
-    bodyText: `Gulf Track Business Setup & Visa Works specializes in professional documentation, legal typing, translation, and government liaison services. With years of experience in the Gulf region, we understand the intricacies of local regulations and documentation requirements.
-    Our expert team provides accurate, efficient, and reliable services that help businesses and individuals navigate complex documentation processes. From legal typing to visa processing, we ensure all your paperwork is handled with precision and care.`,
+    title: "Gulf Track Typing Services L.L.C",
+    tagline: "COMPANY OVERVIEW",
+    bodyText: `Gulf Track Typing Services L.L.C provides professional typing and PRO services to individuals and businesses in Abu Dhabi. We support clients with government documentation, visa processing, business setup, insurance, and compliance-related services through structured and efficient processes.`,
   },
-  buttonText: "CONTACT WITH US",
+  buttonText: "SPEAK TO OUR PRO TEAM",
   buttonHref: "/contact-us",
 };
 
-const services =  [
-    {
-      key: 21,
-      ImageURL: "/company-business.png",
-      title: "Visa Processing",
-      desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
-   
-    },
-    {
-      key: 22,
-      ImageURL: "/company-business.png",
-      title: "Govt. Entity Services",
-      desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
-   
-    },
-    {
-      key: 23,
-      ImageURL: "/company-business.png",
-      title: "Legal Typing",
-      desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
-   
-    },
-    {
-      key: 24,
-      ImageURL: "/company-business.png",
-      title: "Document Clearance",
-      desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
-   
-    },
-  ]
+const mission_data = [
+  {
+    id: "1",
+    title: "Mission",
+    lucideIcon: Target,
+    desc: "Our Mission is to maintain the highest levels of Professionalism, Integrity, Honesty and Fairness in our relationships with our Customers, Suppliers, Subcontractors, and Professional Associates.",
+  },
+  {
+    id: "2",
+    title: "Vision",
+    lucideIcon: Eye,
+    desc: "To provide the best service to our clients and thus by achieving extraordinary results aiming for not only the organizational growth but also to contribute to the social & economic growth of the United Arab Emirates.",
+  },
+];
 
+const services = [
+  {
+    key: 1,
+    ImageURL: "/business_setup.png",
+    title: "Business Setup & Trade Licensing",
+    desc: "End-to-end support for new business formation and license renewals",
+    points: [
+      "New Company Setup",
+      "Trade License Renewal",
+      "Documentation and applications handling",
+      "Coordination with government departments",
+    ],
+  },
+  {
+    key: 2,
+    ImageURL: "/visa_services_family.png",
+    title: "Visa Services (Company & Family)",
+    desc: "Complete assistance for company and family visa processing",
+    points: [
+      "Company Visa (New & Renewal)",
+      "Family Visa Services",
+      "New Born Visa",
+      "Parents Visa",
+    ],
+  },
+  {
+    key: 3,
+    ImageURL: "/insurance_compliance.png",
+    title: "Insurance & Compliance Services",
+    desc: "Support for mandatory and optional insurance requirements",
+    points: [
+      "Daman File Opening & Renewal",
+      "Workmen Compensation Insurance",
+      "ILOE Insurance",
+      "Health & Property Insurance",
+      "Flexi Insurance for Partners & Investors",
+      "Third Party Liability Insurance",
+    ],
+  },
+  {
+    key: 4,
+    ImageURL: "/vehicle_services.png",
+    title: "Vehicle & Traffic Services",
+    desc: "Assistance with vehicle-related government services",
+    points: [
+      "Vehicle Renewal",
+      "Vehicle Fine Payments",
+      "Vehicle Insurance",
+    ],
+  },
+  {
+    key: 5,
+    ImageURL: "/documentation_attestation.png",
+    title: "Documentation & Attestation Services",
+    desc: "Professional handling of legal and personal documentation",
+    points: [
+      "Certificate Attestation (Educational, Marriage, Birth)",
+      "Power of Attorney (POA – Same Day)",
+      "Government submissions and attestations",
+    ],
+  },
+  {
+    key: 6,
+    ImageURL: "/saudi_expansion.png",
+    title: "Saudi Business Expansion Support",
+    desc: "Documentation and coordination support for businesses planning expansion into Saudi Arabia",
+    points: [
+      "Business Setup – Saudi Arabia",
+      "Saudi Branch Setup",
+      "Documentation coordination",
+    ],
+  },
+];
+
+const whyChooseUsReasons = [
+  "Experienced PRO professionals",
+  "Clear and accurate documentation handling",
+  "Timely processing and follow-up",
+  "Support for both individuals and businesses",
+  "Transparent service approach",
+];
 
 const page = () => {
   return (
     <div className="space-y-16 pb-16 bg-white">
       <PageHeader {...pageHeaderData} />
       <About {...AboutCompany} />
-      <CompaniesService Services={services}/>
-      <p>Below section will be updated once we get the data</p>
-      <WhyChooseUs/>
-
-      
+      <MissionVision data={mission_data} />
+      <CompaniesService Services={services} />
+      <WhyClientsChooseUs reasons={whyChooseUsReasons} showSafety={false} />
     </div>
-    
   );
 };
 

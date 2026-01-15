@@ -1,7 +1,5 @@
-import Link from 'next/link';
-import React from 'react'
 import Image from 'next/image';
-import { ArrowRightIcon, MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone, type LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
     imageUrl: string;
@@ -9,57 +7,62 @@ interface ServiceCardProps {
     title: string;
     description: string;
     companyLink: string;
+    Icon?: LucideIcon;
+    phone: string;
+    phone2?: string;
+    email: string;
+    address: string;
   }
 
+const CompanyContactsCard = ({
+  imageUrl,
+  imageAlt,
+  title,
+  Icon,
+  phone,
+  phone2,
+  email,
+  address,
+}: ServiceCardProps) => {
   const officeInfo = [
     {
       icon: Phone,
       title: 'Phone Number & Email',
       content: (
         <>
-          <p>+(310) 2591 21563</p>
-          <p className="text-red-500 group-hover:text-gray-300">help-bizani@gmail.com</p>
+          <p><a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a></p>
+          {phone2 && <p><a href={`tel:${phone2.replace(/\s/g, '')}`}>{phone2}</a></p>}
+          <p className="text-red-500 group-hover:text-gray-300"><a href={`mailto:${email}`}>{email}</a></p>
         </>
       ),
     },
     {
       icon: MapPin,
       title: 'Our Office Address',
-      content: (
-        <p>
-          258 Dancing Street, Miland Line,
-          <br />
-          HUYI 21563, New York
-        </p>
-      ),
+      content: <p>{address}</p>,
     },
-   
   ];
-
-const CompanyContactsCard = ({
-  imageUrl,
-  imageAlt,
-  title,
-  description,
-  companyLink,
-}: ServiceCardProps) => {
+  
   return (
-    <div className="rounded-2xl flex flex-col shadow-2xl overflow-hidden group hover:text-white">
-      <div>
+    <div className="rounded-2xl flex flex-col shadow-2xl overflow-hidden group hover:text-white h-full">
+      <div className="relative w-full h-36 md:h-64 overflow-visible">
         <Image
           src={imageUrl}
-          height={200}
-          width={100}
-          className="w-full h-36 md:h-64"
+          fill
+          className="object-cover"
           alt={imageAlt}
         />
+        <div className="absolute -bottom-5 md:-bottom-10 left-1/2 -translate-x-1/2 md:left-5 md:translate-x-0 w-fit bg-white p-2 rounded-xl z-10 shadow-lg">
+            {Icon ? (
+              <Icon className="h-10 w-10 md:h-20 md:w-20 text-red-600" strokeWidth={1.5} />
+            ) : (
+              <img src="/c1.svg"  alt="svg" className='h-10 w-10 md:h-20 md:w-20'/>
+            )}
+        </div>
       </div>
-      <div className="w-full px-5 bg-gray-100 group-hover:bg-red-600">
-        <div className="flex flex-col md:py-5 items-center md:items-start">
-          <div className="-mt-[53px] w-fit bg-white p-2 rounded-xl">
-            <img src="/c1.svg"  alt="svg" className='h-10 w-10 md:h-20 md:w-20'/>
-          </div>
-          <div className="w-full flex flex-col gap-y-4 py-5">
+      <div className="w-full px-5 bg-gray-100 group-hover:bg-red-600 flex-grow">
+        <div className="flex flex-col pt-8 md:pt-14 pb-5 items-center md:items-start">
+          <div className="w-full flex flex-col gap-y-4">
           <div className="space-y-6">
           <h3 className="text-base md:text-2xl w-full md:max-w-4/5 text-black font-semibold text-center md:text-start"> {title}</h3>
             <hr className='border-gray-400 border-t-[1px]'/>

@@ -10,12 +10,12 @@ const data = [
     services: [
       {
         key: 11,
-        ImageURL: "/company-business.png",
+        ImageURL: "/facility_management.png",
         title: "Facilities Management Services",
       },
       {
         key: 12,
-        ImageURL: "/company-business.png",
+        ImageURL: "/oil_gas.png",
         title: "Oil & Gas-Onshore & Offshore Operation",
       },
     ],
@@ -26,12 +26,12 @@ const data = [
     services: [
       {
         key: 21,
-        ImageURL: "/company-business.png",
+        ImageURL: "/visa_processing.png",
         title: "Visa Processing",
       },
       {
         key: 22,
-        ImageURL: "/company-business.png",
+        ImageURL: "/business_typing.png",
         title: "Govt. Entity Services",
       },
     ],
@@ -42,12 +42,12 @@ const data = [
     services: [
       {
         key: 31,
-        ImageURL: "/company-business.png",
+        ImageURL: "/visa_processing.png",
         title: "Visa Assistance",
       },
       {
         key: 32,
-        ImageURL: "/company-business.png",
+        ImageURL: "/flight_booking.png",
         title: "Flight Booking",
       },
     ],

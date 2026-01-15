@@ -23,7 +23,7 @@ const PrimaryButton = ({
       transition-all duration-300 ease-in-out 
       ${primary?"hover:bg-red-700 bg-red-600":"hover:bg-green-700 bg-green-600"}
       hover:shadow-lg hover:shadow-red-500/50
-      transform hover:scale-[1.02]` }
+      transform hover:scale-[1.02] cursor-pointer` }
     >
       
         {/* Text passed via prop */}

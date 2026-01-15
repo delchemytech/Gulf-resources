@@ -128,17 +128,18 @@ const Navbar = () => {
         isScrolled ? "h-8" : "h-10"
       }`}>
         <div className="flex text-sm font-medium md:text-base justify-center">
-          <div className="flex px-4 text-white border-x-1 items-center">
-            <PhoneIcon className="h-4 w-4 text-red-500 mr-2" />
-            +971 2 5555523, +971 2 5522533
+          <div className="flex px-4 text-white border-x-1 items-center gap-2">
+            <PhoneIcon className="h-4 w-4 text-red-500" />
+            <a href="tel:+97125176889" className="hover:text-red-500 transition">+971 2 517 6889</a>, 
+            <a href="tel:+971501344537" className="hover:text-red-500 transition">+971 50 134 4537</a>
           </div>
           <div className="flex px-4 text-white border-x-1 items-center">
             <MapPinIcon className="h-4 w-4 text-red-500 mr-2" />
-            Abu Dhabi, UAE
+            Office 4, Musaffah 37, Opp. Gift Action, Abu Dhabi, UAE
           </div>
           <div className="flex px-4 text-white border-x-1 items-center">
             <EnvelopeIcon className="h-4 w-4 text-red-500 mr-2" />
-            info@gulfresources.ae
+            <a href="mailto:info@gulfresources.ae" className="hover:text-red-500 transition">info@gulfresources.ae</a>
           </div>
         </div>
         

@@ -15,7 +15,7 @@ const pageHeaderData = {
 };
 
 const AboutCompany = {
-  imageURL: "/images/companies/facility/about.png",
+  imageURL: "/facility_about.png",
   alt: "About Gulf Resources Facilities Management",
   headerData: {
     title: "Gulf Resources Facilities Management",
@@ -46,25 +46,25 @@ const mission_data = [
 const services = [
   {
     key: 11,
-    ImageURL: "/company-facility.png",
+    ImageURL: "/facility_management.png",
     title: "Facilities Management",
     desc: "We deliver integrated facilities management solutions covering daily operations, preventive maintenance, and site coordination. Our services support the smooth functioning of commercial, industrial, and institutional facilities by ensuring infrastructure, utilities, and essential services operate efficiently and in compliance with operational requirements.",
   },
   {
     key: 12,
-    ImageURL: "/company-facility.png",
+    ImageURL: "/manpower_resources.png",
     title: "Manpower Supply",
     desc: "We supply skilled and unskilled manpower to support construction, maintenance, and industrial projects. Our manpower solutions are structured to meet project timelines, workforce requirements, and operational demands, including rapid deployment for short-term and long-term assignments.",
   },
   {
     key: 13,
-    ImageURL: "/company-facility.png",
+    ImageURL: "/building_maintenance.png",
     title: "Building Maintenance & MEP",
     desc: "Our building maintenance services include preventive and corrective maintenance of mechanical, electrical, and plumbing systems. We focus on minimizing downtime, extending asset life, and ensuring consistent performance of building infrastructure across operational environments.",
   },
   {
     key: 14,
-    ImageURL: "/company-facility.png",
+    ImageURL: "/oil_gas.png",
     title: "Oil & Gas – Onshore & Offshore Operations",
     desc: "We provide operational and manpower support services for oil and gas projects in both onshore and offshore environments. Our teams support project execution by supplying trained personnel and operational assistance aligned with site-specific requirements and safety standards.",
   },

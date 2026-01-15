@@ -9,8 +9,9 @@ const officeInfo = [
     title: 'Phone Number & Email',
     content: (
       <>
-        <p>+(310) 2591 21563</p>
-        <p className="text-red-500">help-bizani@gmail.com</p>
+        <p><a href="tel:+97125176889" className="hover:text-red-600 transition">+971 2 517 6889</a></p>
+        <p><a href="tel:+971501344537" className="hover:text-red-600 transition">+971 50 134 4537</a></p>
+        <p className="text-red-500"><a href="mailto:info@gulfresources.ae">info@gulfresources.ae</a></p>
       </>
     ),
   },
@@ -19,9 +20,9 @@ const officeInfo = [
     title: 'Our Office Address',
     content: (
       <p>
-        258 Dancing Street, Miland Line,
+        Office 4, Musaffah 37, Opp. Gift Action
         <br />
-        HUYI 21563, New York
+        Abu Dhabi, UAE
       </p>
     ),
   },
@@ -30,8 +31,8 @@ const officeInfo = [
     title: 'Official Work Time',
     content: (
       <>
-        <p>7:00am - 6:00pm (Mon - Fri)</p>
-        <p className="text-red-500">Sat, Sun & Holiday Closed</p>
+        <p>8:00am - 6:00pm (Sun - Thu)</p>
+        <p className="text-red-500">Fri & Sat Closed</p>
       </>
     ),
   },
@@ -101,7 +102,7 @@ const ContactForm = () => {
             <div className="bg-gray-100 p-6 sm:p-10 rounded-xl md:col-span-3 ">
               <h2 className="text-2xl font-bold text-gray-800 mb-2">Leave a Message</h2>
               <p className="text-gray-500 mb-8">
-                Fill-up The Form and Message us of your amazing question
+                Fill up the form and message us with your questions
               </p>
     
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -129,8 +130,9 @@ const ContactForm = () => {
                         Select Subject
                       </option>
                       <option value="General Inquiry">General Inquiry</option>
-                      <option value="Support">Support</option>
-                      <option value="Partnership">Partnership</option>
+                      <option value="Gulf Resources Facility Management">Gulf Resources Facility Management</option>
+                      <option value="Gulf Track Business Setup & Visa Works">Gulf Track Business Setup & Visa Works</option>
+                      <option value="Gulf Track Tours & Travels">Gulf Track Tours & Travels</option>
                     </select>
                     {/* Custom arrow icon to replace default select arrow */}
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
@@ -171,7 +173,7 @@ const ContactForm = () => {
                 Office Information
               </h2>
               <p className="text-gray-500 mb-8">
-                Completely recapitalize 24/7 communities via standards compliant metrics whereas.
+                Reach out to us for any inquiries or support. We are here to assist you 24/7.
               </p>
     
               <div className="space-y-6">
