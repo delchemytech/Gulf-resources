@@ -169,7 +169,7 @@ const Navbar = () => {
           <div className="flex gap-4 py-2 items-center">
             <Link href={"/"}>
               <Image
-                src="/images/logo.png"
+                src="/images/logo2.png"
                 alt="logo"
                 width={128}
                 height={32}
