@@ -49,12 +49,12 @@ export default function hero() {
                 buttonHref="/contact-us"
                 ButtonIcon={ArrowRightIcon}
               />
-              <PrimaryButton
+              {/* <PrimaryButton
                 buttonText={"Our Services"}
                 buttonHref="/services"
                 ButtonIcon={ArrowRightIcon}
                 primary={false}
-              />
+              /> */}
             </div>
             </div>
           </div>

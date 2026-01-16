@@ -61,7 +61,7 @@ const CompanyCardNew = ({
             <p className='text-gray-500 group-hover:text-gray-100 text-sm md:text-base text-center md:text-start line-clamp-4'>{description}</p>
           </div>
           
-          <Link href={companyLink} className='flex items-center text-black gap-x-2 font-bold mt-4 group-hover:text-white'>
+          <Link href={companyLink} className='flex items-center text-black gap-x-2 font-bold mt-4 group-hover:text-black'>
             View Details 
             <ArrowRightIcon className='w-4 h-4'/>
           </Link>
