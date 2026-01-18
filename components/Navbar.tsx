@@ -287,6 +287,7 @@ const Navbar = () => {
               <CTAButton
                 buttonText="Contact Us"
                 buttonColorClass="bg-red-600 w-full justify-center"
+                onClick={() => setIsMenuOpen(false)}
               />
             </div>
           </div>

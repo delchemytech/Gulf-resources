@@ -8,20 +8,44 @@ interface data {
   bodyText: string;
   alt?: string;
   bgImage?: string;
+  mobileBgImage?: string;
 }
 
-const PageHeader = ({ tagline, title, bodyText, alt = "Page Bg", bgImage = "/images/pageHeaderBg.png" }: data) => {
+const PageHeader = ({ 
+  tagline, 
+  title, 
+  bodyText, 
+  alt = "Page Bg", 
+  bgImage = "/images/pageHeaderBg.png",
+  mobileBgImage 
+}: data) => {
   return (
     <div className="relative w-full h-[60vh] min-h-[500px] flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src={bgImage}
-          fill
-          alt={alt}
-          className="object-cover"
-          priority
-        />
+        {/* Desktop Background */}
+        <div className={mobileBgImage ? "hidden md:block absolute inset-0" : "absolute inset-0"}>
+          <Image
+            src={bgImage}
+            fill
+            alt={alt}
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        {/* Mobile Background */}
+        {mobileBgImage && (
+          <div className="block md:hidden absolute inset-0">
+            <Image
+              src={mobileBgImage}
+              fill
+              alt={`${alt} mobile`}
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
         {/* Gradient Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
       </div>

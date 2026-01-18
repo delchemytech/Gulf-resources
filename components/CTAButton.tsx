@@ -4,11 +4,12 @@ import Link from "next/link";
 
 interface buttonEssentials {
     buttonText: string;
-    buttonColorClass: string
-    buttonWrapperColorHex?:string;
+    buttonColorClass: string;
+    buttonWrapperColorHex?: string;
+    onClick?: () => void;
 }
 
-export default function CTAButton({buttonText,buttonColorClass}:buttonEssentials) {
+export default function CTAButton({buttonText, buttonColorClass, onClick}: buttonEssentials) {
   return (
     <>
       <style>{`
@@ -29,7 +30,7 @@ export default function CTAButton({buttonText,buttonColorClass}:buttonEssentials
       <div className={`relative inline-block p-0.5 rounded-full overflow-hidden hover:scale-105 transition duration-300 
       active:scale-100 before:content-[''] before:absolute before:inset-0 
       before:bg-[conic-gradient(from_0deg,_#FF8C00,_#FF8C0030,_#FF8C00)] button-wrapper`}>
-        <Link href={'/contact-us'}>
+        <Link href={'/contact-us'} onClick={onClick}>
         <button className={"relative z-10 bg-gray-800 text-white rounded-full px-8 py-3 font-bold text-sm uppercase cursor-pointer " + buttonColorClass }>
           {buttonText}
         </button>

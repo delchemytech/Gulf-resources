@@ -6,24 +6,42 @@ interface PageHeroProps {
   title: string;
   breadcrumbText: string;
   backgroundImage?: string;
+  mobileBackgroundImage?: string;
 }
 
 export default function PageHero({
   title,
   breadcrumbText,
   backgroundImage = "/bg.png",
+  mobileBackgroundImage,
 }: PageHeroProps) {
   return (
     <section className="relative h-[40vh] min-h-[300px] w-full">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src={backgroundImage}
-          alt={title}
-          fill
-          className="object-cover"
-          priority
-        />
+        {/* Desktop Background */}
+        <div className={mobileBackgroundImage ? "hidden md:block absolute inset-0" : "absolute inset-0"}>
+          <Image
+            src={backgroundImage}
+            alt={title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        
+        {/* Mobile Background */}
+        {mobileBackgroundImage && (
+          <div className="block md:hidden absolute inset-0">
+            <Image
+              src={mobileBackgroundImage}
+              alt={`${title} mobile`}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
         <div className="absolute inset-0 bg-black/60" />
       </div>
 

@@ -13,6 +13,7 @@ const pageHeaderData = {
     "Delivering facilities management, manpower supply, building maintenance, and oil & gas support services for commercial and industrial operations across the UAE.",
   title: "Facilities Management & Industrial Support Services",
   bgImage: "/images/companies/facilities_hero.png",
+  mobileBgImage: "/images/companies/facilities_hero_mobile.png",
 };
 
 const AboutCompany = {

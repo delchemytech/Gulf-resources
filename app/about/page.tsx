@@ -25,7 +25,12 @@ export default function AboutPage() {
 
   return (
     <main className="bg-white">
-      <PageHero title="About Us" breadcrumbText="About Us" backgroundImage="/hero_bg.png" />
+      <PageHero 
+        title="About Us" 
+        breadcrumbText="About Us" 
+        backgroundImage="/hero_bg_optimized.png" 
+        mobileBackgroundImage="/hero_bg_mobile.png"
+      />
 
       {/* Detailed Introduction Section */}
       <section className="py-16 md:py-24">
