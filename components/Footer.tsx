@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { SVGProps } from "react";
 import RedParallelograms from "./Icons/RedParallelograms";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Clock } from "lucide-react";
 
 // --- Type Definitions (Reusing the previous definitions for structure) ---
 interface FooterLink {
@@ -18,10 +19,8 @@ interface FooterLink {
 
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/gulf_resourcesfacilities?igsh=MXBoM3N3OWpqbzlsMQ==", label: "Gulf Resources Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/gulftracktyping_services_2024?igsh=YWNkd2I0Z2Y5ODNu", label: "Gulf Track Instagram" },
 ];
 
 const Footer = () => {
@@ -82,12 +81,6 @@ const Footer = () => {
 
   // Default links data (can be imported from lib/data/constants.js in a real app)
   const DEFAULT_QUICK_LINKS: FooterLink[] = [
-    {
-      key: "3",
-      label: "Our Companies",
-      href: "/our-company",
-      subList: DEFAULT_COMPANY_LINKS,
-    },
     { key: "4", label: "Contact Us", href: "/contact-us" },
   ];
 
@@ -137,95 +130,217 @@ const Footer = () => {
       </div>
 
       {/* 2. Main Content and Links Section */}
-      <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-0 0">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8  pt-8 ">
-          {/* Logo & Address (Col 1-4) */}
-          <div className="col-span-full md:col-span-3 pr-10">
-            {logo_address()}
+      <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          
+          {/* Column 1: Brand & Contact */}
+          <div className="space-y-6">
+            <div className="relative w-48 h-16">
+               <Link href="/">
+                 <Image 
+                   src="/images/logo.png" 
+                   alt="Gulf Resources Logo" 
+                   width={180} 
+                   height={50} 
+                   className="object-contain"
+                 />
+               </Link>
+            </div>
+            
+            <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
+              <p className="flex items-start gap-3">
+                <span className="mt-1 text-red-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                    <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                Office 4, Musaffah 37, Opp. Gift Action<br/>Abu Dhabi, UAE
+              </p>
+              <p className="flex items-center gap-3">
+                <span className="text-red-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                    <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                <a href="tel:+97125176889" className="hover:text-white transition-colors">+971 2 51 76889</a>, <a href="tel:+971501344537" className="hover:text-white transition-colors">+971 50 134 4537</a>
+              </p>
+              <p className="flex items-center gap-3">
+                <span className="text-red-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
+                </span>
+                <a href="mailto:info@gulfresources.ae" className="hover:text-white transition-colors">info@gulfresources.ae</a>
+              </p>
+              <p className="flex items-center gap-3 text-gray-400">
+                <span className="text-red-600">
+                  <Clock className="w-5 h-5" />
+                </span>
+                <span>9:00 AM - 10:00 PM (Sun: Closed)</span>
+              </p>
+            </div>
+
+            <div className="space-y-3 pt-4">
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">Follow Our Companies</p>
+              <div className="flex flex-col gap-3">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 group transition-colors"
+                  >
+                    <div className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center group-hover:bg-red-600 transition-all duration-300">
+                      <social.icon className="w-5 h-5 text-gray-400 group-hover:text-white" strokeWidth={2} />
+                    </div>
+                    <span className="text-sm text-gray-400 group-hover:text-white transition-colors">{social.label}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* Quick Links and Company Links (Col 5-12) - Arranged in a flat list with Contact Us last */}
-          <div className="col-span-full md:col-span-9 ">
-            <div className="flex flex-col  mb-6 gap-4">
-              <h4 className="text-lg md:text-xl font-bold">Quick Links</h4>
-              <hr className="w-48 h-0.5 border-none bg-gradient-to-r from-red-600 via-red-600 to-[#1C1C1C]" />
-            </div>
-            <div className="grid grid-cols-2 gap-x-12 gap-y-12 ">
-              {/* Render Links */}
+          {/* Column 2: Our Companies */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 relative inline-block">
+              Our Companies
+              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-red-600 rounded-full"></span>
+            </h4>
+            <ul className="space-y-4">
+              {DEFAULT_COMPANY_LINKS.map((company) => (
+                <li key={company.key}>
+                  <Link
+                    href={company.href}
+                    className="group flex items-start gap-3 text-gray-400 hover:text-white transition-colors duration-300"
+                  >
+                    <ArrowRightIcon className="w-5 h-5 text-red-600 mt-0.5 transform group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm font-medium leading-tight">{company.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Quick Links */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-6 relative inline-block">
+              Quick Links
+              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-red-600 rounded-full"></span>
+            </h4>
+            <ul className="space-y-4">
+              <li>
+                <Link href="/" className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300">
+                   <ArrowRightIcon className="w-4 h-4 text-red-600 transform group-hover:translate-x-1 transition-transform" />
+                   <span className="text-sm font-medium">Home</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300">
+                   <ArrowRightIcon className="w-4 h-4 text-red-600 transform group-hover:translate-x-1 transition-transform" />
+                   <span className="text-sm font-medium">About Us</span>
+                </Link>
+              </li>
               {DEFAULT_QUICK_LINKS.map((item) => (
-                <div key={item.key} className="h-full w-full  text-white ">
+                <li key={item.key}>
                   <Link
                     href={item.href}
-                    className="flex group gap-2 items-center justify-start hover:text-red-600 text-sm font-bold"
+                    className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300"
                   >
-                    <ArrowRightIcon className="w-4 h-4 group-hover:text-red-600 " />
-                    {item.label}
+                    <ArrowRightIcon className="w-4 h-4 text-red-600 transform group-hover:translate-x-1 transition-transform" />
+                    <span className="text-sm font-medium">{item.label}</span>
                   </Link>
-
-                  <div className="h-full w-full flex flex-col mx-4 gap-4 mt-2">
-                    {item.subList &&
-                      item.subList.map((sItem) => (
-                        <Link
-                          key={sItem.key}
-                          href={sItem.href}
-                          className="flex group gap-2 pl-1  items-start text-sm font-bold justify-start hover:text-red-600"
-                        >
-                          {sItem.label}
-                        </Link>
-                      ))}
-                  </div>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
+
         </div>
       </div>
 
-      <div className=" md:hidden mx-12">
-        <div className="flex flex-col gap-6 mb-16">
-          {/* Render Links */}
-          {DEFAULT_QUICK_LINKS.map((item) => (
-            <div key={item.key} className="w-full text-white text-sm">
-              <Link
-                href={item.href}
-                className={`flex group gap-2 items-center justify-start hover:text-red-600 text-sm font-bold`}
-              >
-                <ArrowRightIcon className="w-4 h-4 group-hover:text-red-600 " />
-                {item.label}
-              </Link>
+      {/* Mobile Footer (Simplified) */}
+      <div className="md:hidden px-6 py-12 space-y-10">
+         {/* Brand */}
+         <div className="space-y-4">
+            <Link href="/">
+              <Image 
+                src="/images/logo.png" 
+                alt="Gulf Resources Logo" 
+                width={140} 
+                height={40} 
+                className="object-contain"
+              />
+            </Link>
+            <p className="text-gray-400 text-sm">
+              Your trusted partner for business and manpower solutions in the UAE.
+            </p>
+         </div>
 
-              {item.subList && (
-                <div className="w-full flex flex-col ml-6 gap-4 mt-2">
-                  {item.subList.map((sItem) => (
-                    <Link
-                      key={sItem.key}
-                      href={sItem.href}
-                      className="flex group gap-2 pl-1 items-start text-sm font-bold justify-start hover:text-red-600"
-                    >
-                      {sItem.label}
+         {/* Links Grid */}
+         <div className="grid grid-cols-1 gap-8">
+            <div>
+              <h4 className="text-white font-bold mb-4">Our Companies</h4>
+              <ul className="space-y-3">
+                {DEFAULT_COMPANY_LINKS.map((company) => (
+                  <li key={company.key}>
+                    <Link href={company.href} className="text-gray-400 text-sm hover:text-red-500 block">
+                      {company.label}
                     </Link>
-                  ))}
-                </div>
-              )}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
-
-        {logo_address()}
+            <div>
+              <h4 className="text-white font-bold mb-4">Contact</h4>
+              <div className="space-y-3 text-sm text-gray-400">
+                <p>Office 4, Musaffah 37, Abu Dhabi</p>
+                <p>+971 2 51 76889 | +971 50 134 4537</p>
+                <p>info@gulfresources.ae</p>
+                <p className="pt-2 text-red-500 font-semibold">9:00 AM - 10:00 PM (Sun: Closed)</p>
+              </div>
+            </div>
+         </div>
+         
+         {/* Socials */}
+         <div className="space-y-4">
+            <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">Follow Us</p>
+            <div className="flex flex-col gap-4">
+               {socialLinks.map((social) => (
+                 <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
+                   <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
+                     <social.icon className="w-4 h-4" />
+                   </div>
+                   <span className="text-sm font-medium">{social.label}</span>
+                 </a>
+               ))}
+            </div>
+         </div>
       </div>
 
       {/* 3. Copyright Bar */}
-      <div className="border-t border-gray-700 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-gray-400">
-          <p className="mb-3 sm:mb-0 text-center text-sm font-medium">
-            Copyright © Gulf Resources. All rights reserved 2025
-          </p>
-          <div className="space-x-6 text-center">
-            <Link href="/terms-of-use" className="hover:text-red-600 transition text-sm font-bold">
+      <div className="bg-black py-8 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-center md:text-left">
+            <p className="text-gray-500 text-sm">
+              © {new Date().getFullYear()} <span className="text-white font-semibold">Gulf Resources</span>. All rights reserved.
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+            <Link 
+              href="/terms-of-use" 
+              className="text-gray-500 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
+            >
               Terms of Use
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/privacy-policy" className="hover:text-red-600 transition text-sm font-bold">
+            <Link 
+              href="/privacy-policy" 
+              className="text-gray-500 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
+            >
               Privacy Policy
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
         </div>

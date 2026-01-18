@@ -31,7 +31,7 @@ const About = ({imageURL,alt,headerData,buttonText,buttonHref}:data) => {
       <div className=" h-fit md:w-1/2 px-8 md:h-120 flex flex-col justify-start items-start ">
 
         <HeaderWithDescription {...headerData}/>
-        <div className='w-full flex justify-center md:justify-start md:m-8'>
+        <div className='w-full flex justify-center md:justify-start '>
         <PrimaryButton buttonText={buttonText} ButtonIcon={ArrowRightIcon} buttonHref={buttonHref}/>
         </div>
       </div>

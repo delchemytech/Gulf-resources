@@ -1,6 +1,5 @@
 import React from "react";
 import RedParallelograms from "./Icons/RedParallelograms";
-import PrimaryButton from "./ui/PrimaryButton";
 
 const ServiceStrip = () => {
   return (
@@ -22,21 +21,26 @@ const ServiceStrip = () => {
       <div className="absolute -right-32 -bottom-32 w-96 h-96 bg-white/5 rounded-full"></div>
       
       <div className="container mx-auto md:max-w-7xl flex flex-col lg:flex-row items-center justify-between relative z-10 gap-16">
-        <div className=" py-2 sm:py-8 md:py-12 flex flex-col md:mx-2 md-mx-0  ">
-          <div className="hidden md:flex items-center  mb-4 ">
+        <div className="py-2 sm:py-8 md:py-12 flex flex-col md:mx-0">
+          <div className="hidden items-center mb-4">
             {/* Small Red Bars (Matching the design) */}
-            <RedParallelograms className={`w-8 h-4 text-white`} />
+            <RedParallelograms className="w-8 h-4 text-white mr-2" />
             <p className="text-sm font-bold tracking-wider uppercase text-white">
               About Our Company
             </p>
           </div>
 
-          <h2 className="text-4xl md:text-5xl text-center md:text-start px-16  md:w-5/6 font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl text-start md:w-5/6 font-bold text-white mb-6 leading-tight">
             Looking for expert consultancy? Contact us today.
           </h2>
         </div>
         <div className="mr-0 md:mr-4">
-          <PrimaryButton buttonText="Get Our Service" buttonHref="/services" />
+          <a 
+            href="/contact-us" 
+            className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg inline-block whitespace-nowrap"
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </div>

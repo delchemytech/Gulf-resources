@@ -31,8 +31,8 @@ const officeInfo = [
     title: 'Official Work Time',
     content: (
       <>
-        <p>8:00am - 6:00pm (Sun - Thu)</p>
-        <p className="text-red-500">Fri & Sat Closed</p>
+        <p>9:00 AM - 10:00 PM</p>
+        <p className="text-red-500">Sunday Closed</p>
       </>
     ),
   },
@@ -46,6 +46,36 @@ interface FormData {
   message: string;
 }
 
+
+// --- Reusable Input Component ---
+const InputField: React.FC<{ 
+  name: string; 
+  type: string; 
+  placeholder: string; 
+  icon: React.ElementType;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}> = ({
+  name,
+  type,
+  placeholder,
+  icon: Icon,
+  value,
+  onChange,
+}) => (
+  <div className="relative ">
+    <input
+      type={type}
+      id={name}
+      name={name}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+      className="w-full px-4 bg-white py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 text-gray-700 placeholder-gray-400 pr-10"
+    />
+    <Icon className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+  </div>
+);
 
 const ContactForm = () => {
     const [formData, setFormData] = React.useState<FormData>({
@@ -68,27 +98,6 @@ const ContactForm = () => {
         // Add your form submission logic here (e.g., API call)
       };
     
-      // --- Reusable Input Component ---
-      const InputField: React.FC<{ name: keyof FormData; type: string; placeholder: string; icon: React.ElementType }> = ({
-        name,
-        type,
-        placeholder,
-        icon: Icon,
-      }) => (
-        <div className="relative ">
-          <input
-            type={type}
-            id={name}
-            name={name}
-            placeholder={placeholder}
-            value={formData[name]}
-            onChange={handleChange}
-            className="w-full px-4 bg-white py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 text-gray-700 placeholder-gray-400 pr-10"
-          />
-          <Icon className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-        </div>
-      );
-    
       return (
         // Outer container with light gray background for the whole section
         <section className="container mx-auto max-w-7xl py-8 md:py-16 px-4 sm:px-6 lg:px-8">
@@ -109,10 +118,10 @@ const ContactForm = () => {
                 {/* Name and Email Row */}
                 <div className="flex flex-col sm:flex-row gap-5">
                   <div className="flex-1">
-                    <InputField name="name" type="text" placeholder="Your Name" icon={User} />
+                    <InputField name="name" type="text" placeholder="Your Name" icon={User} value={formData.name} onChange={handleChange} />
                   </div>
                   <div className="flex-1">
-                    <InputField name="email" type="email" placeholder="Email Address" icon={Mail} />
+                    <InputField name="email" type="email" placeholder="Email Address" icon={Mail} value={formData.email} onChange={handleChange} />
                   </div>
                 </div>
     

@@ -1,5 +1,5 @@
 import NextImage from 'next/image';
-import { MapPin, Phone, type LucideIcon } from 'lucide-react';
+import { MapPin, Phone, Clock, type LucideIcon } from 'lucide-react';
 
 interface ServiceCardProps {
     imageUrl: string;
@@ -12,6 +12,7 @@ interface ServiceCardProps {
     phone2?: string;
     email: string;
     address: string;
+    hours?: string;
   }
 
 const CompanyContactsCard = ({
@@ -23,6 +24,7 @@ const CompanyContactsCard = ({
   phone2,
   email,
   address,
+  hours,
 }: ServiceCardProps) => {
   const officeInfo = [
     {
@@ -41,6 +43,11 @@ const CompanyContactsCard = ({
       title: 'Our Office Address',
       content: <p>{address}</p>,
     },
+    ...(hours ? [{
+      icon: Clock,
+      title: 'Office Hours',
+      content: <p>{hours}</p>,
+    }] : []),
   ];
   
   return (

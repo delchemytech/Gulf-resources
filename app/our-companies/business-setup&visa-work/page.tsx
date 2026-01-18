@@ -11,6 +11,7 @@ const pageHeaderData = {
   bodyText:
     "Comprehensive typing, visa, business setup, insurance, and government documentation services delivered with accuracy, speed, and reliability.",
   title: "Typing & PRO Services in Abu Dhabi",
+  bgImage: "/images/companies/business_hero.png",
 };
 
 const AboutCompany = {

@@ -11,6 +11,7 @@ const pageHeaderData = {
   bodyText:
     "Providing reliable travel planning, visa assistance, and documentation support for individuals and families travelling abroad, with a strong focus on Gulf destinations.",
   title: "Travel & Visa Services for Overseas Travel",
+  bgImage: "/images/companies/travel_hero.png",
 };
 
 const AboutCompany = {
