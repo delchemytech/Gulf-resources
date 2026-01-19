@@ -5,6 +5,7 @@ import ManpowerResources from "@/components/Companies/ManpowerResources";
 import WhyClientsChooseUs from "@/components/Companies/WhyClientsChooseUs";
 import MissionVision from "@/components/MissionVision";
 import PageHeader from "@/components/ui/PageHeader";
+import { Target, Eye } from "lucide-react";
 import React from "react";
 
 const pageHeaderData = {
@@ -32,15 +33,13 @@ const mission_data = [
   {
     id: "1",
     title: "Mission",
-    icon: "/mission.svg",
-    alt_text: "Mission Icon",
+    lucideIcon: Target,
     desc: "Our Mission is to maintain the highest levels of Professionalism, Integrity, Honesty and Fairness in our relationships with our Customers, Suppliers, Subcontractors, and Professional Associates.",
   },
   {
     id: "2",
     title: "Vision",
-    icon: "/vision.svg",
-    alt_text: "Vision Icon",
+    lucideIcon: Eye,
     desc: "To provide the best service to our clients and thus by achieving extraordinary results aiming for not only the organizational growth but also to contribute to the social & economic growth of the United Arab Emirates.",
   },
 ];

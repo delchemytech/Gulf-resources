@@ -28,17 +28,17 @@ const Footer = () => {
     {
       key: "31",
       label: "Gulf Resources Facilities Management",
-      href: "/our-company/company-a",
+      href: "/our-companies/facilities-management",
     },
     {
       key: "32",
       label: "Gulf Track Business Setup & Visa Works",
-      href: "/our-company/company-c",
+      href: "/our-companies/business-setup&visa-work",
     },
     {
       key: "33",
       label: "Gulf Track Tours & Travels",
-      href: "/our-company/company-e",
+      href: "/our-companies/tours-and-travels",
     },
   ];
 
