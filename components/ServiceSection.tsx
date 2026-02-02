@@ -10,12 +10,12 @@ const data = [
     services: [
       {
         key: 11,
-        ImageURL: "/facility_management.png",
+        ImageURL: "/webp/facility_management.webp",
         title: "Facilities Management Services",
       },
       {
         key: 12,
-        ImageURL: "/oil_gas.png",
+        ImageURL: "/webp/oil_gas.webp",
         title: "Oil & Gas-Onshore & Offshore Operation",
       },
     ],
@@ -26,12 +26,12 @@ const data = [
     services: [
       {
         key: 21,
-        ImageURL: "/visa_processing.png",
+        ImageURL: "/webp/visa_processing.webp",
         title: "Visa Processing",
       },
       {
         key: 22,
-        ImageURL: "/business_typing.png",
+        ImageURL: "/webp/business_typing.webp",
         title: "Govt. Entity Services",
       },
     ],
@@ -42,12 +42,12 @@ const data = [
     services: [
       {
         key: 31,
-        ImageURL: "/visa_processing.png",
+        ImageURL: "/webp/visa_processing.webp",
         title: "Visa Assistance",
       },
       {
         key: 32,
-        ImageURL: "/flight_booking.png",
+        ImageURL: "/webp/flight_booking.webp",
         title: "Flight Booking",
       },
     ],

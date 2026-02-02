@@ -28,8 +28,8 @@ export default function AboutPage() {
       <PageHero 
         title="About Us" 
         breadcrumbText="About Us" 
-        backgroundImage="/hero_bg_optimized.png" 
-        mobileBackgroundImage="/hero_bg_mobile.png"
+        backgroundImage="/webp/hero_bg_optimized.webp" 
+        mobileBackgroundImage="/webp/hero_bg_mobile.webp"
       />
 
       {/* Detailed Introduction Section */}
@@ -76,7 +76,7 @@ export default function AboutPage() {
             <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
               <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg mt-8">
                 <Image
-                  src="/about_workers.png"
+                  src="/webp/about_workers.webp"
                   alt="Professional Workers"
                   fill
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
@@ -85,7 +85,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/workers.png"
+                  src="/webp/workers.webp"
                   alt="Team Meeting"
                   fill
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
@@ -94,7 +94,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-48 md:h-60 rounded-2xl overflow-hidden shadow-lg col-span-2">
                  <Image
-                  src="/bg2.png"
+                  src="/webp/bg2.webp"
                   alt="Office Environment"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"

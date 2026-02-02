@@ -138,7 +138,7 @@ const Footer = () => {
             <div className="relative w-48 h-16">
                <Link href="/">
                  <Image 
-                   src="/images/logo.png" 
+                   src="/webp/images/logo.webp" 
                    alt="Gulf Resources Logo" 
                    width={180} 
                    height={50} 
@@ -265,7 +265,7 @@ const Footer = () => {
          <div className="space-y-4">
             <Link href="/">
               <Image 
-                src="/images/logo.png" 
+                src="/webp/images/logo.webp" 
                 alt="Gulf Resources Logo" 
                 width={140} 
                 height={40} 

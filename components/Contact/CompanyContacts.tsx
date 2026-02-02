@@ -6,7 +6,7 @@ import { Building2, FileCheck, Plane } from "lucide-react";
 const data = [
     {
       id: "1",
-      imageUrl: "/facility_management.png",
+      imageUrl: "/webp/facility_management.webp",
       imageAlt: "Construction Worker",
       title: "Gulf Resources Facility Management",
       description:
@@ -20,7 +20,7 @@ const data = [
     },
     {
       id: "2",
-      imageUrl: "/business_typing.png",
+      imageUrl: "/webp/business_typing.webp",
       imageAlt: "Construction Worker",
       title: "Gulf Track Business Setup & Visa Works",
       description:
@@ -34,7 +34,7 @@ const data = [
     },
     {
       id: "3",
-      imageUrl: "/tours_travels.png",
+      imageUrl: "/webp/tours_travels.webp",
       imageAlt: "Construction Worker",
       title: "Gulf Track Tours & Travels",
       description:

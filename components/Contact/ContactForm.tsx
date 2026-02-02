@@ -85,6 +85,9 @@ const ContactForm = () => {
         message: '',
       });
     
+    const [isSubmitting, setIsSubmitting] = React.useState(false);
+    const [submitStatus, setSubmitStatus] = React.useState<'idle' | 'success' | 'error'>('idle');
+    
       const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({
           ...formData,
@@ -92,10 +95,40 @@ const ContactForm = () => {
         });
       };
     
-      const handleSubmit = (e: React.FormEvent) => {
+      const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form Submitted:', formData);
-        // Add your form submission logic here (e.g., API call)
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+        
+        try {
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              access_key: 'c3ca599d-56bd-4c6f-86e1-4a9165f5eb17',
+              name: formData.name,
+              email: formData.email,
+              subject: formData.subject,
+              message: formData.message,
+              from_name: 'Gulf Resources Website',
+              to_name: 'Gulf Resources Team',
+            }),
+          });
+
+          if (response.ok) {
+            setSubmitStatus('success');
+            setFormData({ name: '', email: '', subject: '', message: '' });
+          } else {
+            setSubmitStatus('error');
+          }
+        } catch (error) {
+          console.error('Form submission error:', error);
+          setSubmitStatus('error');
+        } finally {
+          setIsSubmitting(false);
+        }
       };
     
       return (
@@ -168,11 +201,31 @@ const ContactForm = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg flex items-center justify-center transition duration-200"
+                  disabled={isSubmitting}
+                  className={`w-full font-semibold py-3 rounded-lg flex items-center justify-center transition duration-200 ${
+                    isSubmitting 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-red-600 hover:bg-red-700'
+                  } text-white`}
                 >
-                  SUBMIT MESSAGE
+                  {isSubmitting ? 'SENDING...' : 'SUBMIT MESSAGE'}
                   <Mail className="ml-2 h-4 w-4" />
                 </button>
+
+                {/* Success/Error Messages */}
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    <p className="font-semibold">Message sent successfully!</p>
+                    <p className="text-sm">Thank you for contacting us. We'll get back to you soon.</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                    <p className="font-semibold">Failed to send message.</p>
+                    <p className="text-sm">Please try again or contact us directly.</p>
+                  </div>
+                )}
               </form>
             </div>
     

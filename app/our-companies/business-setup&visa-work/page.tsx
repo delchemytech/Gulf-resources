@@ -11,12 +11,12 @@ const pageHeaderData = {
   bodyText:
     "Comprehensive typing, visa, business setup, insurance, and government documentation services delivered with accuracy, speed, and reliability.",
   title: "Typing & PRO Services in Abu Dhabi",
-  bgImage: "/images/companies/business_hero.png",
-  mobileBgImage: "/images/companies/business_hero_mobile.png",
+  bgImage: "/webp/images/companies/business_hero.webp",
+  mobileBgImage: "/webp/images/companies/business_hero_mobile.webp",
 };
 
 const AboutCompany = {
-  imageURL: "/visa_about.png",
+  imageURL: "/webp/visa_about.webp",
   alt: "About Gulf Track Typing Services",
   headerData: {
     title: "Gulf Track Typing Services L.L.C",
@@ -45,7 +45,7 @@ const mission_data = [
 const services = [
   {
     key: 1,
-    ImageURL: "/business_setup.png",
+    ImageURL: "/webp/business_setup.webp",
     title: "Business Setup & Trade Licensing",
     desc: "End-to-end support for new business formation and license renewals",
     points: [
@@ -57,7 +57,7 @@ const services = [
   },
   {
     key: 2,
-    ImageURL: "/visa_services_family.png",
+    ImageURL: "/webp/visa_services_family.webp",
     title: "Visa Services (Company & Family)",
     desc: "Complete assistance for company and family visa processing",
     points: [
@@ -69,7 +69,7 @@ const services = [
   },
   {
     key: 3,
-    ImageURL: "/insurance_compliance.png",
+    ImageURL: "/webp/insurance_compliance.webp",
     title: "Insurance & Compliance Services",
     desc: "Support for mandatory and optional insurance requirements",
     points: [
@@ -83,7 +83,7 @@ const services = [
   },
   {
     key: 4,
-    ImageURL: "/vehicle_services.png",
+    ImageURL: "/webp/vehicle_services.webp",
     title: "Vehicle & Traffic Services",
     desc: "Assistance with vehicle-related government services",
     points: [
@@ -94,7 +94,7 @@ const services = [
   },
   {
     key: 5,
-    ImageURL: "/documentation_attestation.png",
+    ImageURL: "/webp/documentation_attestation.webp",
     title: "Documentation & Attestation Services",
     desc: "Professional handling of legal and personal documentation",
     points: [
@@ -105,7 +105,7 @@ const services = [
   },
   {
     key: 6,
-    ImageURL: "/saudi_expansion.png",
+    ImageURL: "/webp/saudi_expansion.webp",
     title: "Saudi Business Expansion Support",
     desc: "Documentation and coordination support for businesses planning expansion into Saudi Arabia",
     points: [

@@ -8,7 +8,7 @@ const RevInSection = () => {
     <div className="relative z-20 flex flex-col gap-16 container mx-auto max-w-7xl w-full h-96 md:h-[500px] p-12 md:p-48 
      text-white items-center justify-center">
       <Image
-        src={"/red_strip_bg.png"}
+        src={"/webp/red_strip_bg.webp"}
         fill
         alt={"background shades"}
         className="object-cover  -z-30"

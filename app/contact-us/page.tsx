@@ -9,8 +9,8 @@ const pageHeaderData = {
   bodyText:
     "Ready to partner with us? We're here to help you find the perfect business solution for your needs.",
   title: "GET IN TOUCH WITH US",
-  bgImage: "/contact_hero.png",
-  mobileBgImage: "/contact_hero_mobile.png",
+  bgImage: "/webp/contact_hero.webp",
+  mobileBgImage: "/webp/contact_hero_mobile.webp",
 };
 
 const page = () => {

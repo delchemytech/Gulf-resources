@@ -13,12 +13,12 @@ const pageHeaderData = {
   bodyText:
     "Delivering facilities management, manpower supply, building maintenance, and oil & gas support services for commercial and industrial operations across the UAE.",
   title: "Facilities Management & Industrial Support Services",
-  bgImage: "/images/companies/facilities_hero.png",
-  mobileBgImage: "/images/companies/facilities_hero_mobile.png",
+  bgImage: "/webp/images/companies/facilities_hero.webp",
+  mobileBgImage: "/webp/images/companies/facilities_hero_mobile.webp",
 };
 
 const AboutCompany = {
-  imageURL: "/facility_about.png",
+  imageURL: "/webp/facility_about.webp",
   alt: "About Gulf Resources Facilities Management",
   headerData: {
     title: "Gulf Resources Facilities Management",
@@ -47,25 +47,25 @@ const mission_data = [
 const services = [
   {
     key: 11,
-    ImageURL: "/facility_management.png",
+    ImageURL: "/webp/facility_management.webp",
     title: "Facilities Management",
     desc: "We deliver integrated facilities management solutions covering daily operations, preventive maintenance, and site coordination. Our services support the smooth functioning of commercial, industrial, and institutional facilities by ensuring infrastructure, utilities, and essential services operate efficiently and in compliance with operational requirements.",
   },
   {
     key: 12,
-    ImageURL: "/manpower_resources.png",
+    ImageURL: "/webp/manpower_resources.webp",
     title: "Manpower Supply",
     desc: "We supply skilled and unskilled manpower to support construction, maintenance, and industrial projects. Our manpower solutions are structured to meet project timelines, workforce requirements, and operational demands, including rapid deployment for short-term and long-term assignments.",
   },
   {
     key: 13,
-    ImageURL: "/building_maintenance.png",
+    ImageURL: "/webp/building_maintenance.webp",
     title: "Building Maintenance & MEP",
     desc: "Our building maintenance services include preventive and corrective maintenance of mechanical, electrical, and plumbing systems. We focus on minimizing downtime, extending asset life, and ensuring consistent performance of building infrastructure across operational environments.",
   },
   {
     key: 14,
-    ImageURL: "/oil_gas.png",
+    ImageURL: "/webp/oil_gas.webp",
     title: "Oil & Gas – Onshore & Offshore Operations",
     desc: "We provide operational and manpower support services for oil and gas projects in both onshore and offshore environments. Our teams support project execution by supplying trained personnel and operational assistance aligned with site-specific requirements and safety standards.",
   },

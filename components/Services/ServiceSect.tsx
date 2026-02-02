@@ -8,25 +8,25 @@ const data = [
     services: [
       {
         key: 11,
-        ImageURL: "/company-business.png",
+        ImageURL: "/webp/company-business.webp",
         title: "Facilities Management Services",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
       },
       {
         key: 12,
-        ImageURL: "/company-business.png",
+        ImageURL: "/webp/company-business.webp",
         title: "Oil & Gas-Onshore & Offshore Operation",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
       },
       {
         key: 13,
-        ImageURL: "/building_maintenance.png",
+        ImageURL: "/webp/building_maintenance.webp",
         title: "Buildings Maintenance",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
       },
       {
         key: 14,
-        ImageURL: "/manpower_resources.png",
+        ImageURL: "/webp/manpower_resources.webp",
         title: "Manpower Resourses",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
       },
@@ -38,28 +38,28 @@ const data = [
     services: [
       {
         key: 21,
-        ImageURL: "/company-business.png",
+        ImageURL: "/webp/company-business.webp",
         title: "Visa Processing",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 22,
-        ImageURL: "/govt_services.png",
+        ImageURL: "/webp/govt_services.webp",
         title: "Govt. Entity Services",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 23,
-        ImageURL: "/legal_typing.png",
+        ImageURL: "/webp/legal_typing.webp",
         title: "Legal Typing",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 24,
-        ImageURL: "/document_clearance.png",
+        ImageURL: "/webp/document_clearance.webp",
         title: "Document Clearance",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
@@ -72,28 +72,28 @@ const data = [
     services: [
       {
         key: 31,
-        ImageURL: "/company-business.png",
+        ImageURL: "/webp/company-business.webp",
         title: "Visa Assistance",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 32,
-        ImageURL: "/company-business.png",
+        ImageURL: "/webp/company-business.webp",
         title: "Flight Booking",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 33,
-        ImageURL: "/hotel_reservation.png",
+        ImageURL: "/webp/hotel_reservation.webp",
         title: "Hotel Reservations",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      
       },
       {
         key: 34,
-        ImageURL: "/tour_packages.png",
+        ImageURL: "/webp/tour_packages.webp",
         title: "Tour Packages",
         desc:"Consistent, dependable service delivery that you can count on, backed by our proven track record of excellence.",
      

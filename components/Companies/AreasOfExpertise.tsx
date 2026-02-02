@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 
 const expertiseAreas = [
-  { name: "Automotive", image : "/images/expertise/automotive.png" },
+  { name: "Automotive", image : "/webp/images/expertise/automotive.webp" },
 
-  { name: "Engineering", image: "/images/expertise/engineering.png" },
-  { name: "Healthcare", image: "/images/expertise/healthcare.png" },
-  { name: "Oil & Gas", image: "/images/expertise/oil-gas.png" },
-  { name: "Office Support", image: "/images/expertise/office.png" },
-  { name: "Power & Energy", image: "/images/expertise/power-energy.png" },
-  { name: "Hospitality", image: "/images/expertise/hospitality.png" },
-  { name: "Construction", image: "/images/expertise/construction.png" },
+  { name: "Engineering", image: "/webp/images/expertise/engineering.webp" },
+  { name: "Healthcare", image: "/webp/images/expertise/healthcare.webp" },
+  { name: "Oil & Gas", image: "/webp/images/expertise/oil-gas.webp" },
+  { name: "Office Support", image: "/webp/images/expertise/office.webp" },
+  { name: "Power & Energy", image: "/webp/images/expertise/power-energy.webp" },
+  { name: "Hospitality", image: "/webp/images/expertise/hospitality.webp" },
+  { name: "Construction", image: "/webp/images/expertise/construction.webp" },
 ];
 
 const AreasOfExpertise = () => {

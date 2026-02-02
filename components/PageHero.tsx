@@ -12,7 +12,7 @@ interface PageHeroProps {
 export default function PageHero({
   title,
   breadcrumbText,
-  backgroundImage = "/bg.png",
+  backgroundImage = "/webp/bg.webp",
   mobileBackgroundImage,
 }: PageHeroProps) {
   return (

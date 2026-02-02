@@ -193,7 +193,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href={"/"} className="flex-shrink-0">
             <Image
-              src="/images/logo.png"
+              src="/webp/images/logo.webp"
               alt="Gulf Resources Logo"
               width={160}
               height={45}

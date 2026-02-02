@@ -11,12 +11,12 @@ const pageHeaderData = {
   bodyText:
     "Providing reliable travel planning, visa assistance, and documentation support for individuals and families travelling abroad, with a strong focus on Gulf destinations.",
   title: "Travel & Visa Services for Overseas Travel",
-  bgImage: "/images/companies/travel_hero.png",
-  mobileBgImage: "/images/companies/travel_hero_mobile.png",
+  bgImage: "/webp/images/companies/travel_hero.webp",
+  mobileBgImage: "/webp/images/companies/travel_hero_mobile.webp",
 };
 
 const AboutCompany = {
-  imageURL: "/travel_about.png",
+  imageURL: "/webp/travel_about.webp",
   alt: "About Gulf Track Tours & Travels",
   headerData: {
     title: "Gulf Track Tours & Travels",
@@ -45,7 +45,7 @@ const mission_data = [
 const services = [
   {
     key: 31,
-    ImageURL: "/flight_booking.png",
+    ImageURL: "/webp/flight_booking.webp",
     title: "Flight Ticket Booking",
     desc: "Domestic & International air ticket reservations",
     points: [
@@ -56,7 +56,7 @@ const services = [
   },
   {
     key: 32,
-    ImageURL: "/visa_processing2.png",
+    ImageURL: "/webp/visa_processing2.webp",
     title: "Visit Visa Services",
     desc: "Let us handle your visit visa process with professionalism and speed",
     points: [
@@ -67,7 +67,7 @@ const services = [
   },
   {
     key: 33,
-    ImageURL: "/visa_processing.png",
+    ImageURL: "/webp/visa_processing.webp",
     title: "Job Visa Assistance",
     desc: "Planning to work abroad? We assist in:",
     points: [
@@ -78,7 +78,7 @@ const services = [
   },
   {
     key: 34,
-    ImageURL: "/saudi_visa.png",
+    ImageURL: "/webp/saudi_visa.webp",
     title: "Saudi Visa Stamping",
     desc: "Specialized support for Saudi Arabia visa stamping services",
     points: [
@@ -89,7 +89,7 @@ const services = [
   },
   {
     key: 35,
-    ImageURL: "/certificate_attestation.png",
+    ImageURL: "/webp/certificate_attestation.webp",
     title: "Certificate Attestation",
     desc: "We provide attestation services for:",
     points: [

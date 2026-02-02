@@ -11,7 +11,7 @@ export default function hero() {
         {/* Desktop Background */}
         <div className="hidden md:block absolute inset-0">
           <Image
-            src={"/hero_bg_optimized.png"}
+            src={"/webp/hero_bg_optimized.webp"}
             fill
             alt={"Hero background"}
             priority
@@ -22,7 +22,7 @@ export default function hero() {
         {/* Mobile Background */}
         <div className="block md:hidden absolute inset-0">
           <Image
-            src={"/hero_bg_mobile.png"}
+            src={"/webp/hero_bg_mobile.webp"}
             fill
             alt={"Hero background mobile"}
             priority

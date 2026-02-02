@@ -7,7 +7,7 @@ const CompaniesHome = () => {
   const data = [
     {
       id: "1",
-      imageUrl: "/facility_management.png",
+      imageUrl: "/webp/facility_management.webp",
       imageAlt: "Facilities Management",
       title: "Gulf Resources Facilities Management",
       subtitle: "Industrial & Commercial Services | UAE",
@@ -18,7 +18,7 @@ const CompaniesHome = () => {
     },
     {
       id: "2",
-      imageUrl: "/business_typing.png",
+      imageUrl: "/webp/business_typing.webp",
       imageAlt: "Typing Services",
       title: "Gulf Track Typing Services",
       subtitle: "Typing, PRO & Documentation Services | UAE",
@@ -29,7 +29,7 @@ const CompaniesHome = () => {
     },
     {
       id: "3",
-      imageUrl: "/tours_travels.png",
+      imageUrl: "/webp/tours_travels.webp",
       imageAlt: "Tours and Travels",
       title: "Gulf Track Tours & Travels",
       subtitle: "Travel & Visa Services | Pattambi, Kerala",

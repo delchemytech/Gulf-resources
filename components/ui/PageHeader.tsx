@@ -16,7 +16,7 @@ const PageHeader = ({
   title, 
   bodyText, 
   alt = "Page Bg", 
-  bgImage = "/images/pageHeaderBg.png",
+  bgImage = "/webp/images/pageHeaderBg.webp",
   mobileBgImage 
 }: data) => {
   return (

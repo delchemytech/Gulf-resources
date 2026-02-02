@@ -45,7 +45,7 @@ const mission_data = [
         <Hero />
       </div>
       <AboutSection
-        imageURL={"/about_workers.png"}
+        imageURL={"/webp/about_workers.webp"}
         alt={"Two workers smiling"}
         headerData={headerData}
         buttonText={"LEARN MORE"}

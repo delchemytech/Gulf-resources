@@ -57,7 +57,7 @@ export default function about() {
       />
 
       <AboutSection
-        imageURL={"/workers.png"}
+        imageURL={"/webp/workers.webp"}
         alt={"Two workers smiling"}
         headerData={headerData}
         buttonText={"CONTACT WITH US"}
