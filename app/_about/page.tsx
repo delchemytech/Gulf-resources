@@ -60,8 +60,8 @@ export default function about() {
         imageURL={"/webp/workers.webp"}
         alt={"Two workers smiling"}
         headerData={headerData}
-        buttonText={"CONTACT WITH US"}
-        buttonHref={"/about"}
+        buttonText={"CONTACT US FOR MORE INFORMATION"}
+        buttonHref={"/contact-us"}
       />
 
       <MissionVision data={mission_data}

@@ -1,6 +1,10 @@
 // tailwind.config.js
 module.exports = {
-    // ...
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './components/**/*.{js,ts,jsx,tsx,mdx}',
+      './app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
     theme: {
       extend: {
         colors: {
@@ -17,5 +21,20 @@ module.exports = {
         },
       },
     },
-    // ...
+    // Optimize CSS output
+    corePlugins: {
+      preflight: true,
+    },
+    // Remove unused CSS
+    purge: {
+      enabled: process.env.NODE_ENV === 'production',
+      content: [
+        './pages/**/*.{js,ts,jsx,tsx}',
+        './components/**/*.{js,ts,jsx,tsx}',
+        './app/**/*.{js,ts,jsx,tsx}',
+      ],
+      options: {
+        safelist: ['bg-red-600', 'text-white', 'font-bold'], // Keep critical classes
+      }
+    }
   }

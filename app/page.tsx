@@ -51,13 +51,13 @@ const mission_data = [
         imageURL={"/webp/about_workers.webp"}
         alt={"Two workers smiling"}
         headerData={headerData}
-        buttonText={"LEARN MORE"}
+        buttonText={"LEARN MORE ABOUT GULF RESOURCES"}
         buttonHref={"/about"}
       />
       <MissionVision data= {mission_data}/>
       <CompaniesHome />
       <WhyChooseUs />
-      <MovingClients />
+      {/* <MovingClients /> */}
 
       <ServiceStrip />
       {/* <ServiceSection /> */}

@@ -36,7 +36,7 @@ title='Its the title',desc=``,points,buttonText="VIEW DETAILS",show_button=true 
         </p>
         {desc && <p className="hidden md:flex text-gray-600 text-sm mt-2 ml-2">{desc}</p>}
         {points && points.length > 0 && (
-          <ul className="hidden md:flex flex-col space-y-1 mt-2 ml-2 text-gray-500 text-sm">
+          <ul className="hidden md:flex flex-col space-y-1 mt-2 ml-2 text-gray-600 text-sm">
             {points.map((point, index) => (
               <li key={index} className="flex items-start">
                 <span className="text-red-600 mr-2 mt-0.5">•</span>

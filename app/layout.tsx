@@ -5,14 +5,11 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-
-
 const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
-  // Note: You don't even need the 'variable' or 'weight' property for this simplest approach!
-  // But adding a 'display: swap' is good practice for performance.
-  display: 'swap', 
+  display: 'swap', // Critical for performance
+  preload: true, // Preload the font
 });
 
 export const metadata: Metadata = {
@@ -162,6 +159,34 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        {/* Critical CSS for above-the-fold content */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            /* Critical CSS - inline for faster rendering */
+            body { margin: 0; font-family: var(--font-outfit), system-ui, sans-serif; }
+            .bg-white { background-color: #ffffff; }
+            .text-black { color: #000000; }
+            .text-white { color: #ffffff; }
+            .bg-red-600 { background-color: #dc2626; }
+            .font-bold { font-weight: 700; }
+            .text-center { text-align: center; }
+            .flex { display: flex; }
+            .hidden { display: none; }
+            @media (min-width: 768px) { .md\\:flex { display: flex; } .md\\:hidden { display: none; } }
+          `
+        }} />
+        {/* Preload critical resources */}
+        <link rel="preload" href="/webp/hero_bg_optimized.webp" as="image" />
+        <link rel="preload" href="/webp/images/logo.webp" as="image" />
+        <link rel="preload" href="/webp/about_workers.webp" as="image" />
+        
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//api.web3forms.com" />
+        
+        {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}

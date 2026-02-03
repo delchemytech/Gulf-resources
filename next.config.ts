@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
   // Enable compression (Cloudflare also compresses, but this helps)
   compress: true,
   
+  // Optimize CSS loading
+  experimental: {
+    optimizeCss: true,
+    cssChunking: 'strict',
+  },
+  
   // Headers optimized for Cloudflare
   async headers() {
     return [
@@ -40,6 +46,16 @@ const nextConfig: NextConfig = {
           {
             key: 'CF-Cache-Tag',
             value: 'static-images',
+          },
+        ],
+      },
+      {
+        // CSS files - cache with revalidation
+        source: '/_next/static/css/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },

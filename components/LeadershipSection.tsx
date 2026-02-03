@@ -54,7 +54,7 @@ const LeadershipSection = () => {
           </div>
           <div className="font-semibold text-black text-2xl ">{item.name}</div>
           <div className="text-black">{item.pos} </div>
-          <div className="text-gray-400">
+          <div className="text-gray-600">
             {item.desc}
           </div>
         </div>

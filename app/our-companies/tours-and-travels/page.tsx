@@ -5,10 +5,10 @@ import WhyClientsChooseUs from "@/components/Companies/WhyClientsChooseUs";
 import MissionVision from "@/components/MissionVision";
 import PageHeader from "@/components/ui/PageHeader";
 import { Target, Eye } from "lucide-react";
-import React from "react";
 
-// Enable static generation with revalidation
-export const revalidate = 3600; // Revalidate every hour
+// This page contains static company information that rarely changes
+// No revalidation needed - will be statically generated at build time
+// Only regenerates when you deploy new changes
 
 export const metadata: Metadata = {
   title: "Gulf Track Tours & Travels - Travel & Visa Services",

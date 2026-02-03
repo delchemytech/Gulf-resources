@@ -256,7 +256,7 @@ const Navbar = () => {
             
             {/* Mobile Socials */}
             <div className="border-t border-gray-100 pt-6 space-y-4">
-               <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Follow Us</p>
+               <p className="text-xs font-bold text-gray-300 uppercase tracking-wider">Follow Us</p>
                <div className="flex flex-col gap-3">
                   <a
                     href="https://www.instagram.com/gulf_resourcesfacilities?igsh=MXBoM3N3OWpqbzlsMQ=="

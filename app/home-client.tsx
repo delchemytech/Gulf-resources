@@ -44,7 +44,7 @@ With our head office at Office 4, Musaffah 37, Opp. Gift Action, Abu Dhabi and a
         imageURL={"/webp/about_workers.webp"}
         alt={"Two workers smiling"}
         headerData={headerData}
-        buttonText={"LEARN MORE"}
+        buttonText={"LEARN MORE ABOUT GULF RESOURCES"}
         buttonHref={"/about"}
       />
       <MissionVision data={mission_data} />
