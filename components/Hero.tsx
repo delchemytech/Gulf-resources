@@ -13,7 +13,7 @@ export default function hero() {
           <Image
             src={"/webp/hero_bg_optimized.webp"}
             fill
-            alt={"Hero background"}
+            alt={"Gulf Resources hero background - Professional business solutions in UAE"}
             priority
             className="object-cover z-0"
           />
@@ -24,7 +24,7 @@ export default function hero() {
           <Image
             src={"/webp/hero_bg_mobile.webp"}
             fill
-            alt={"Hero background mobile"}
+            alt={"Gulf Resources mobile hero background - Business solutions UAE"}
             priority
             className="object-cover z-0"
           />

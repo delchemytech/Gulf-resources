@@ -1,11 +1,30 @@
-"use client";
-
+import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import MissionVision from "@/components/MissionVision";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
 import { Target, Eye } from "lucide-react";
 import RedParallelograms from "@/components/Icons/RedParallelograms";
+
+export const metadata: Metadata = {
+  title: "About Us - Gulf Resources Professional Services",
+  description: "Learn about Gulf Resources Facilities Management L.L.C and Gulf Track Business Setup Services. Established in 2016, we provide professional manpower, recruitment, business setup, and corporate support services across UAE and GCC region.",
+  keywords: [
+    "about Gulf Resources",
+    "facilities management company UAE",
+    "business setup services Abu Dhabi",
+    "professional manpower UAE",
+    "corporate support services GCC",
+    "established 2016",
+    "Abu Dhabi office",
+    "Kerala India branch"
+  ],
+  openGraph: {
+    title: "About Gulf Resources - Professional Services Since 2016",
+    description: "Gulf Resources provides professional manpower, recruitment, business setup, and corporate support services across UAE and GCC region since 2016.",
+    images: ['/webp/about_workers.webp'],
+  },
+};
 
 export default function AboutPage() {
   const mission_data = [
@@ -77,7 +96,7 @@ export default function AboutPage() {
               <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg mt-8">
                 <Image
                   src="/webp/about_workers.webp"
-                  alt="Professional Workers"
+                  alt="Gulf Resources professional workers - Facilities management team"
                   fill
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -86,7 +105,7 @@ export default function AboutPage() {
               <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/webp/workers.webp"
-                  alt="Team Meeting"
+                  alt="Gulf Resources team meeting - Business collaboration"
                   fill
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -95,7 +114,7 @@ export default function AboutPage() {
               <div className="relative h-48 md:h-60 rounded-2xl overflow-hidden shadow-lg col-span-2">
                  <Image
                   src="/webp/bg2.webp"
-                  alt="Office Environment"
+                  alt="Gulf Resources office environment - Professional workspace UAE"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                   className="object-cover hover:scale-105 transition-transform duration-500"

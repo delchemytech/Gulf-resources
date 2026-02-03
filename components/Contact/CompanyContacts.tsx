@@ -7,7 +7,7 @@ const data = [
     {
       id: "1",
       imageUrl: "/webp/facility_management.webp",
-      imageAlt: "Construction Worker",
+      imageAlt: "Gulf Resources Facility Management - Professional facilities services UAE",
       title: "Gulf Resources Facility Management",
       description:
         "Providing top-tier facilities management, manpower supply, and building maintenance services across the UAE.",
@@ -21,7 +21,7 @@ const data = [
     {
       id: "2",
       imageUrl: "/webp/business_typing.webp",
-      imageAlt: "Construction Worker",
+      imageAlt: "Gulf Track Business Setup - Visa and PRO services Abu Dhabi",
       title: "Gulf Track Business Setup & Visa Works",
       description:
       "Expert assistance with business setup, visa processing, and government documentation services.",
@@ -35,7 +35,7 @@ const data = [
     {
       id: "3",
       imageUrl: "/webp/tours_travels.webp",
-      imageAlt: "Construction Worker",
+      imageAlt: "Gulf Track Tours and Travels - Travel and visa services",
       title: "Gulf Track Tours & Travels",
       description:
       "Your trusted partner for travel planning, flight bookings, and visa assistance for global destinations.",

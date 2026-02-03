@@ -7,7 +7,7 @@ const LeadershipSection = () => {
     {
       key: "1",
       imageURL: "/webp/leader_1.webp",
-      imgAlt: "svg",
+      imgAlt: "Ahmed Al-Mansouri - Gulf Resources CEO",
       name: "Ahmed Al-Mansouri",
       pos: "Chief Executive Officer",
       desc: "Visionary leader with over 15 years of experience in Gulf business operations and strategic development.",
@@ -15,7 +15,7 @@ const LeadershipSection = () => {
     {
         key: "2",
         imageURL: "/webp/leader_1.webp",
-        imgAlt: "svg",
+        imgAlt: "Ahmed Al-Mansouri - Gulf Resources Leadership Team",
         name: "Ahmed Al-Mansouri",
         pos: "Chief Executive Officer",
         desc: "Visionary leader with over 15 years of experience in Gulf business operations and strategic development.",
@@ -23,7 +23,7 @@ const LeadershipSection = () => {
       {
         key: "3",
         imageURL: "/webp/leader_1.webp",
-        imgAlt: "svg",
+        imgAlt: "Ahmed Al-Mansouri - Gulf Resources Management",
         name: "Ahmed Al-Mansouri",
         pos: "Chief Executive Officer",
         desc: "Visionary leader with over 15 years of experience in Gulf business operations and strategic development.",
@@ -31,7 +31,7 @@ const LeadershipSection = () => {
       {
         key: "4",
         imageURL: "/webp/leader_1.webp",
-        imgAlt: "svg",
+        imgAlt: "Ahmed Al-Mansouri - Gulf Resources Executive Team",
         name: "Ahmed Al-Mansouri",
         pos: "Chief Executive Officer",
         desc: "Visionary leader with over 15 years of experience in Gulf business operations and strategic development.",

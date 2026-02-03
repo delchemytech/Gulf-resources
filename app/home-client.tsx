@@ -9,38 +9,31 @@ import ServiceStrip from "@/components/ServiceStrip";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { Target, Eye } from "lucide-react";
 
-// Enable static generation with revalidation for homepage
-// Note: This is a client component, so we'll handle caching at the layout level
-
-
-export default function Home() {
-
-const headerData = {
-  title: "Gulf Resources",
-  tagline: "ABOUT OUR COMPANY",
-  bodyText: `Gulf Resources Facilities Management L.L.C and Gulf Track Business Setup Services are recognized providers of professional manpower, recruitment, business setup, and corporate support services across the UAE and GCC region.
+export default function HomeClient() {
+  const headerData = {
+    title: "Gulf Resources",
+    tagline: "ABOUT OUR COMPANY",
+    bodyText: `Gulf Resources Facilities Management L.L.C and Gulf Track Business Setup Services are recognized providers of professional manpower, recruitment, business setup, and corporate support services across the UAE and GCC region.
 
 Established in 2016, we have built a reputation for reliability, integrity, and excellence, delivering efficient and cost-effective solutions tailored to meet our clients' business needs.
 
 With our head office at Office 4, Musaffah 37, Opp. Gift Action, Abu Dhabi and an international branch in Kerala, India, we proudly serve local and overseas clients with seamless operational support.`,
-};
+  };
 
-
-const mission_data = [
-  {
-    id: "1",
-    title: "Mission",
-    lucideIcon: Target,
-    desc: "To deliver exceptional business solutions through our specialized companies, enabling our clients to focus on their core business while we handle their operational needs with professionalism and expertise.",
-  },
-  {
-    id: "2",
-    title: "Vision",
-    lucideIcon: Eye,
-    desc: "To be the leading partner of choice in the Gulf region, recognized for our commitment to excellence, innovation, and sustainable growth across all our business sectors.",
-  },
-  
-];
+  const mission_data = [
+    {
+      id: "1",
+      title: "Mission",
+      lucideIcon: Target,
+      desc: "To deliver exceptional business solutions through our specialized companies, enabling our clients to focus on their core business while we handle their operational needs with professionalism and expertise.",
+    },
+    {
+      id: "2",
+      title: "Vision",
+      lucideIcon: Eye,
+      desc: "To be the leading partner of choice in the Gulf region, recognized for our commitment to excellence, innovation, and sustainable growth across all our business sectors.",
+    },
+  ];
 
   return (
     <div className="bg-white pb-16">
@@ -54,14 +47,11 @@ const mission_data = [
         buttonText={"LEARN MORE"}
         buttonHref={"/about"}
       />
-      <MissionVision data= {mission_data}/>
+      <MissionVision data={mission_data} />
       <CompaniesHome />
       <WhyChooseUs />
       <MovingClients />
-
       <ServiceStrip />
-      {/* <ServiceSection /> */}
-      
     </div>
   );
 }

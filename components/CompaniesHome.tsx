@@ -8,7 +8,7 @@ const CompaniesHome = () => {
     {
       id: "1",
       imageUrl: "/webp/facility_management.webp",
-      imageAlt: "Facilities Management",
+      imageAlt: "Gulf Resources Facilities Management Services - Professional facility management UAE",
       title: "Gulf Resources Facilities Management",
       subtitle: "Industrial & Commercial Services | UAE",
       description:
@@ -19,7 +19,7 @@ const CompaniesHome = () => {
     {
       id: "2",
       imageUrl: "/webp/business_typing.webp",
-      imageAlt: "Typing Services",
+      imageAlt: "Gulf Track Typing Services - Business setup and PRO services Abu Dhabi",
       title: "Gulf Track Typing Services",
       subtitle: "Typing, PRO & Documentation Services | UAE",
       description:
@@ -30,7 +30,7 @@ const CompaniesHome = () => {
     {
       id: "3",
       imageUrl: "/webp/tours_travels.webp",
-      imageAlt: "Tours and Travels",
+      imageAlt: "Gulf Track Tours and Travels - Travel and visa services UAE",
       title: "Gulf Track Tours & Travels",
       subtitle: "Travel & Visa Services | Pattambi, Kerala",
       description:

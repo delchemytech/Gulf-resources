@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import CompaniesService from "@/components/Companies/CompaniesService";
 import About from "@/components/Companies/about";
 import WhyClientsChooseUs from "@/components/Companies/WhyClientsChooseUs";
@@ -5,6 +6,30 @@ import MissionVision from "@/components/MissionVision";
 import PageHeader from "@/components/ui/PageHeader";
 import { Target, Eye } from "lucide-react";
 import React from "react";
+
+// Enable static generation with revalidation
+export const revalidate = 3600; // Revalidate every hour
+
+export const metadata: Metadata = {
+  title: "Gulf Track Tours & Travels - Travel & Visa Services",
+  description: "Gulf Track Tours & Travels provides reliable travel planning, visa assistance, flight booking, and documentation support for individuals and families travelling abroad with focus on Gulf destinations.",
+  keywords: [
+    "Gulf Track Tours Travels",
+    "travel services UAE",
+    "visa assistance Gulf",
+    "flight booking UAE",
+    "visit visa services",
+    "job visa assistance",
+    "Saudi visa stamping",
+    "certificate attestation",
+    "travel planning UAE"
+  ],
+  openGraph: {
+    title: "Gulf Track Tours & Travels - Professional Travel & Visa Services",
+    description: "Reliable travel planning, visa assistance, and documentation support for overseas travel with focus on Gulf destinations.",
+    images: ['/webp/images/companies/travel_hero.webp'],
+  },
+};
 
 const pageHeaderData = {
   tagline: "OUR COMPANIES",

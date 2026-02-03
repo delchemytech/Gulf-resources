@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import About from "@/components/Companies/about";
 import CompaniesService from "@/components/Companies/CompaniesService";
 import WhyClientsChooseUs from "@/components/Companies/WhyClientsChooseUs";
@@ -5,6 +6,27 @@ import MissionVision from "@/components/MissionVision";
 import PageHeader from "@/components/ui/PageHeader";
 import { Target, Eye } from "lucide-react";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Gulf Track Typing & PRO Services - Business Setup & Visa Works",
+  description: "Gulf Track provides comprehensive typing, visa, business setup, insurance, and government documentation services in Abu Dhabi with accuracy, speed, and reliability.",
+  keywords: [
+    "Gulf Track typing services",
+    "PRO services Abu Dhabi",
+    "business setup UAE",
+    "visa services Abu Dhabi",
+    "trade licensing UAE",
+    "document clearance UAE",
+    "insurance services UAE",
+    "government documentation",
+    "typing center Abu Dhabi"
+  ],
+  openGraph: {
+    title: "Gulf Track Typing & PRO Services - Professional Business Support",
+    description: "Comprehensive typing, visa, business setup, insurance, and government documentation services delivered with accuracy and reliability.",
+    images: ['/webp/images/companies/business_hero.webp'],
+  },
+};
 
 const pageHeaderData = {
   tagline: "OUR COMPANIES",

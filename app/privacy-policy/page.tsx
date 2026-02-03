@@ -1,5 +1,22 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/ui/PageHeader";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Gulf Resources",
+  description: "Gulf Resources privacy policy. Learn how we collect, use, and protect your personal information when you use our facilities management, business setup, and travel services.",
+  keywords: [
+    "Gulf Resources privacy policy",
+    "data protection UAE",
+    "privacy policy facilities management",
+    "personal information protection",
+    "Gulf Resources legal"
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const pageHeaderData = {
   tagline: "LEGAL",

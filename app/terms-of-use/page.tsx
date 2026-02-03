@@ -1,5 +1,22 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/ui/PageHeader";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Terms of Use - Gulf Resources",
+  description: "Gulf Resources terms of use and conditions. Please read these terms carefully before using our facilities management, business setup, visa, and travel services.",
+  keywords: [
+    "Gulf Resources terms of use",
+    "terms and conditions UAE",
+    "service terms facilities management",
+    "Gulf Resources legal terms",
+    "business services terms"
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const pageHeaderData = {
   tagline: "LEGAL",

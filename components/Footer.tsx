@@ -139,7 +139,7 @@ const Footer = () => {
                <Link href="/">
                  <Image 
                    src="/webp/images/logo.webp" 
-                   alt="Gulf Resources Logo" 
+                   alt="Gulf Resources Logo - Facilities Management and Business Services" 
                    width={180} 
                    height={50} 
                    className="object-contain"
@@ -266,7 +266,7 @@ const Footer = () => {
             <Link href="/">
               <Image 
                 src="/webp/images/logo.webp" 
-                alt="Gulf Resources Logo" 
+                alt="Gulf Resources Logo - Professional Services UAE" 
                 width={140} 
                 height={40} 
                 className="object-contain"
