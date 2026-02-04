@@ -135,7 +135,7 @@ const Navbar = () => {
               <PhoneIcon className="h-4 w-4 text-red-500" />
               <div className="flex gap-2">
                 <a href="tel:+97125176889" className="hover:text-red-400 transition">+971 2 51 76889</a>
-                <span className="text-gray-600">|</span>
+                <span className="text-gray-400">|</span>
                 <a href="tel:+971501344537" className="hover:text-red-400 transition">+971 50 134 4537</a>
               </div>
             </div>
@@ -210,7 +210,7 @@ const Navbar = () => {
                 href={item.href}
                 className={`relative px-4 py-2 text-sm font-bold transition-all duration-300 rounded-full group ${
                   currentPath === item.href
-                    ? "text-red-600 bg-red-50"
+                    ? "text-red-800 bg-red-100"
                     : "text-gray-700 hover:text-red-600 hover:bg-gray-50"
                 }`}
               >
@@ -256,7 +256,7 @@ const Navbar = () => {
             
             {/* Mobile Socials */}
             <div className="border-t border-gray-100 pt-6 space-y-4">
-               <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Follow Us</p>
+               <p className="text-xs font-bold text-gray-600 uppercase tracking-wider">Follow Us</p>
                <div className="flex flex-col gap-3">
                   <a
                     href="https://www.instagram.com/gulf_resourcesfacilities?igsh=MXBoM3N3OWpqbzlsMQ=="

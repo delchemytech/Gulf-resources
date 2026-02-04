@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Horizontal rule below the logo text */}
           <hr className="w-48 h-0.5 border-none bg-gradient-to-r from-red-600 via-red-600 to-[#1C1C1C]" />
         </div>
-        <p className="text-gray-400 text-sm md:text-base mb-6 leading-relaxed">
+        <p className="text-gray-300 text-sm md:text-base mb-6 leading-relaxed">
           Office 4, Musaffah 37, Opp. Gift Action <br />
           Abu Dhabi, UAE
         </p>
@@ -96,7 +96,7 @@ const Footer = () => {
             <h3 className="text-4xl md:text-5xl font-bold mb-4 leading-snug">
               Ready to Partner with Excellence?
             </h3>
-            <p className="text-gray-400 max-w-lg text-sm md:text-base">
+            <p className="text-gray-300 max-w-lg text-sm md:text-base">
               Join hundreds of satisfied clients who trust Gulf Resources for
               their business solutions. Let&aposs discuss how we can support
               your success.
@@ -147,7 +147,7 @@ const Footer = () => {
                </Link>
             </div>
             
-            <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-300 text-sm leading-relaxed">
               <p className="flex items-start gap-3">
                 <span className="mt-1 text-red-600">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -173,7 +173,7 @@ const Footer = () => {
                 </span>
                 <a href="mailto:info@gulfresources.ae" className="hover:text-white transition-colors">info@gulfresources.ae</a>
               </p>
-              <p className="flex items-center gap-3 text-gray-400">
+              <p className="flex items-center gap-3 text-gray-300">
                 <span className="text-red-600">
                   <Clock className="w-5 h-5" />
                 </span>
@@ -182,7 +182,7 @@ const Footer = () => {
             </div>
 
             <div className="space-y-3 pt-4">
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">Follow Our Companies</p>
+              <p className="text-xs font-bold text-gray-300 uppercase tracking-wider">Follow Our Companies</p>
               <div className="flex flex-col gap-3">
                 {socialLinks.map((social) => (
                   <a
@@ -193,9 +193,9 @@ const Footer = () => {
                     className="flex items-center gap-3 group transition-colors"
                   >
                     <div className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center group-hover:bg-red-600 transition-all duration-300">
-                      <social.icon className="w-5 h-5 text-gray-400 group-hover:text-white" strokeWidth={2} />
+                      <social.icon className="w-5 h-5 text-gray-300 group-hover:text-white" strokeWidth={2} />
                     </div>
-                    <span className="text-sm text-gray-400 group-hover:text-white transition-colors">{social.label}</span>
+                    <span className="text-sm text-gray-300 group-hover:text-white transition-colors">{social.label}</span>
                   </a>
                 ))}
               </div>
@@ -213,7 +213,7 @@ const Footer = () => {
                 <li key={company.key}>
                   <Link
                     href={company.href}
-                    className="group flex items-start gap-3 text-gray-400 hover:text-white transition-colors duration-300"
+                    className="group flex items-start gap-3 text-gray-300 hover:text-white transition-colors duration-300"
                   >
                     <ArrowRightIcon className="w-5 h-5 text-red-600 mt-0.5 transform group-hover:translate-x-1 transition-transform" />
                     <span className="text-sm font-medium leading-tight">{company.label}</span>
@@ -231,13 +231,13 @@ const Footer = () => {
             </h4>
             <ul className="space-y-4">
               <li>
-                <Link href="/" className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300">
+                <Link href="/" className="group flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
                    <ArrowRightIcon className="w-4 h-4 text-red-600 transform group-hover:translate-x-1 transition-transform" />
                    <span className="text-sm font-medium">Home</span>
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300">
+                <Link href="/about" className="group flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
                    <ArrowRightIcon className="w-4 h-4 text-red-600 transform group-hover:translate-x-1 transition-transform" />
                    <span className="text-sm font-medium">About Us</span>
                 </Link>
@@ -246,7 +246,7 @@ const Footer = () => {
                 <li key={item.key}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300"
+                    className="group flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300"
                   >
                     <ArrowRightIcon className="w-4 h-4 text-red-600 transform group-hover:translate-x-1 transition-transform" />
                     <span className="text-sm font-medium">{item.label}</span>
@@ -272,7 +272,7 @@ const Footer = () => {
                 className="object-contain"
               />
             </Link>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               Your trusted partner for business and manpower solutions in the UAE.
             </p>
          </div>
@@ -284,7 +284,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {DEFAULT_COMPANY_LINKS.map((company) => (
                   <li key={company.key}>
-                    <Link href={company.href} className="text-gray-400 text-sm hover:text-red-500 block">
+                    <Link href={company.href} className="text-gray-300 text-sm hover:text-red-500 block">
                       {company.label}
                     </Link>
                   </li>
@@ -293,7 +293,7 @@ const Footer = () => {
             </div>
             <div>
               <h4 className="text-white font-bold mb-4">Contact</h4>
-              <div className="space-y-3 text-sm text-gray-400">
+              <div className="space-y-3 text-sm text-gray-300">
                 <p>Office 4, Musaffah 37, Abu Dhabi</p>
                 <p>+971 2 51 76889 | +971 50 134 4537</p>
                 <p>info@gulfresources.ae</p>
@@ -304,10 +304,10 @@ const Footer = () => {
          
          {/* Socials */}
          <div className="space-y-4">
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">Follow Us</p>
+            <p className="text-xs font-bold text-gray-300 uppercase tracking-wider">Follow Us</p>
             <div className="flex flex-col gap-4">
                {socialLinks.map((social) => (
-                 <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
+                 <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
                    <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
                      <social.icon className="w-4 h-4" />
                    </div>
@@ -322,7 +322,7 @@ const Footer = () => {
       <div className="bg-black py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-300 text-sm">
               © {new Date().getFullYear()} <span className="text-white font-semibold">Gulf Resources</span>. All rights reserved.
             </p>
           </div>
@@ -330,14 +330,14 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             <Link 
               href="/terms-of-use" 
-              className="text-gray-500 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
+              className="text-gray-300 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
             >
               Terms of Use
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link 
               href="/privacy-policy" 
-              className="text-gray-500 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
+              className="text-gray-300 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
             >
               Privacy Policy
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>

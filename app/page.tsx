@@ -51,7 +51,7 @@ const mission_data = [
         imageURL={"/webp/about_workers.webp"}
         alt={"Two workers smiling"}
         headerData={headerData}
-        buttonText={"LEARN MORE"}
+        buttonText={"Learn more about Gulf Resources"}
         buttonHref={"/about"}
       />
       <MissionVision data= {mission_data}/>

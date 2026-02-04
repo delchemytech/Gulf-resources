@@ -17,6 +17,34 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Next.js optimized images - 1 year cache
+        source: '/_next/image',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'CF-Cache-Tag',
+            value: 'nextjs-images',
+          },
+        ],
+      },
+      {
+        // Next.js static assets - 1 year cache
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'CF-Cache-Tag',
+            value: 'nextjs-static',
+          },
+        ],
+      },
+      {
         // Static assets - long cache with Cloudflare edge
         source: '/webp/:path*',
         headers: [

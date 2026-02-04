@@ -27,6 +27,7 @@ export default function hero() {
             alt={"Gulf Resources mobile hero background - Business solutions UAE"}
             priority
             className="object-cover z-0"
+            fetchPriority="high"
           />
         </div>
 
@@ -39,7 +40,7 @@ export default function hero() {
           <div className=" h-full justify-center items-start flex flex-col  mt-[6.75rem]">
             <div className="flex items-center justify-center gap-2">
                      <RedParallelograms className="w-6 h-3 text-red-600" />
-              <span className="text-red-600 text-xs md:text-sm font-bold uppercase tracking-wider">
+              <span className="text-red-400 text-xs md:text-sm font-bold uppercase tracking-wider">
                 Your Trusted Partner in UAE & India
               </span> 
             </div>
