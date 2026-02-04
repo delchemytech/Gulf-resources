@@ -1,17 +1,28 @@
-"use client";
-
 import AboutSection from "@/components/AboutSection";
-import CompaniesHome from "@/components/CompaniesHome";
 import Hero from "@/components/Hero";
 import MissionVision from "@/components/MissionVision";
-import { MovingClients } from "@/components/MovingClients";
-import ServiceStrip from "@/components/ServiceStrip";
-import WhyChooseUs from "@/components/WhyChooseUs";
 import { Target, Eye } from "lucide-react";
+import dynamic from "next/dynamic";
+
+// Dynamically import components that are below the fold
+const CompaniesHome = dynamic(() => import("@/components/CompaniesHome"), {
+  ssr: true,
+});
+
+const WhyChooseUs = dynamic(() => import("@/components/WhyChooseUs"), {
+  ssr: true,
+});
+
+const MovingClients = dynamic(() => import("@/components/MovingClients").then(mod => ({ default: mod.MovingClients })), {
+  ssr: true,
+});
+
+const ServiceStrip = dynamic(() => import("@/components/ServiceStrip"), {
+  ssr: true,
+});
 
 // Enable static generation with revalidation for homepage
-// Note: This is a client component, so we'll handle caching at the layout level
-
+export const revalidate = 3600; // Revalidate every hour
 
 export default function Home() {
 
@@ -57,7 +68,6 @@ const mission_data = [
       <MissionVision data= {mission_data}/>
       <CompaniesHome />
       <WhyChooseUs />
-      <MovingClients />
 
       <ServiceStrip />
       {/* <ServiceSection /> */}

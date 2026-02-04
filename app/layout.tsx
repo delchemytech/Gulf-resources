@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 import { Outfit } from 'next/font/google';
 import "./globals.css";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+
+// Dynamically import Footer since it's below the fold
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: true, // Still render on server for SEO
+});
 
 
 

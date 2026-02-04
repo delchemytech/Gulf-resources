@@ -7,18 +7,13 @@ import CTAButton from "./CTAButton";
 import { usePathname } from "next/navigation";
 
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 /** Defines the structure for a single menu item. */
 interface NavItem {
   label: string;
   href: string;
 }
-
-const socialLinks = [
-  { icon: Instagram, href: "https://www.instagram.com/gulf_resourcesfacilities?igsh=MXBoM3N3OWpqbzlsMQ==", label: "Gulf Resources Instagram" },
-  { icon: Instagram, href: "https://www.instagram.com/gulftracktyping_services_2024?igsh=YWNkd2I0Z2Y5ODNu", label: "Gulf Track Instagram" },
-];
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
@@ -240,7 +235,7 @@ const Navbar = () => {
         {/* Mobile Menu Dropdown */}
         <div
           className={`md:hidden fixed top-[80px] left-0 w-full 
-                      bg-white/95 backdrop-blur-md shadow-xl border-t bg-white/95 transition-all duration-300 ease-in-out z-40
+                      bg-white/95 backdrop-blur-md shadow-xl border-t transition-all duration-300 ease-in-out z-40
                       ${
                         isMenuOpen
                           ? "max-h-[80vh] opacity-100 translate-y-0"

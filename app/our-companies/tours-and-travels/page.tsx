@@ -8,7 +8,6 @@ import { Target, Eye } from "lucide-react";
 import React from "react";
 
 // Enable static generation with revalidation
-export const revalidate = 3600; // Revalidate every hour
 
 export const metadata: Metadata = {
   title: "Gulf Track Tours & Travels - Travel & Visa Services",

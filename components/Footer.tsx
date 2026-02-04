@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-
-import { SVGProps } from "react";
 import RedParallelograms from "./Icons/RedParallelograms";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import { Facebook, Instagram, Twitter, Linkedin, Clock } from "lucide-react";
+import { Instagram, Clock } from "lucide-react";
 
 // --- Type Definitions (Reusing the previous definitions for structure) ---
 interface FooterLink {
