@@ -319,28 +319,46 @@ const Footer = () => {
       {/* 3. Copyright Bar */}
       <div className="bg-black py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-center md:text-left">
-            <p className="text-gray-300 text-sm">
-              © {new Date().getFullYear()} <span className="text-white font-semibold">Gulf Resources</span>. All rights reserved.
-            </p>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-            <Link 
-              href="/terms-of-use" 
-              className="text-gray-300 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
+          <p className="text-gray-400 text-sm text-center md:text-left">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-gray-300 font-medium">Gulf Resources</span>
+            . All rights reserved.
+          </p>
+
+          <nav
+            className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-sm text-gray-300"
+            aria-label="Footer links"
+          >
+            <Link
+              href="/terms-of-use"
+              className="px-2 hover:text-red-500 transition-colors duration-300"
             >
               Terms of Use
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link 
-              href="/privacy-policy" 
-              className="text-gray-300 hover:text-red-500 text-sm font-medium transition-colors duration-300 relative group"
+            <span className="text-gray-600 select-none" aria-hidden="true">
+              ·
+            </span>
+            <Link
+              href="/privacy-policy"
+              className="px-2 hover:text-red-500 transition-colors duration-300"
             >
               Privacy Policy
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-          </div>
+            <span className="text-gray-600 select-none" aria-hidden="true">
+              ·
+            </span>
+            <span className="px-2 text-gray-400">
+              Built by{" "}
+              <a
+                href="https://delchemytech.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-red-500 transition-colors duration-300 font-medium"
+              >
+                DelchemyTech
+              </a>
+            </span>
+          </nav>
         </div>
       </div>
     </footer>
